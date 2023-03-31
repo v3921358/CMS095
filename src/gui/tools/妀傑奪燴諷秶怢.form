@@ -1,0 +1,1132 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.5" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+  <Properties>
+    <Property name="resizable" type="boolean" value="false"/>
+  </Properties>
+  <SyntheticProperties>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+    <SyntheticProperty name="generateCenter" type="boolean" value="true"/>
+  </SyntheticProperties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Component id="jTabbedPane2" min="-2" pref="1260" max="-2" attributes="0"/>
+          <Group type="102" attributes="0">
+              <EmptySpace min="1" pref="1" max="-2" attributes="0"/>
+              <Component id="jScrollPane5" min="-2" pref="1254" max="-2" attributes="0"/>
+          </Group>
+          <Group type="102" attributes="0">
+              <EmptySpace min="10" pref="10" max="-2" attributes="0"/>
+              <Component id="jPanel15" min="-2" pref="230" max="-2" attributes="0"/>
+              <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
+              <Component id="jPanel16" min="-2" pref="470" max="-2" attributes="0"/>
+              <EmptySpace min="260" pref="260" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="jButton13" min="-2" pref="70" max="-2" attributes="0"/>
+                  <Component id="jButton27" min="-2" pref="70" max="-2" attributes="0"/>
+                  <Component id="添加" min="-2" pref="70" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="10" pref="10" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="jButton24" min="-2" pref="70" max="-2" attributes="0"/>
+                  <Component id="jButton1" min="-2" pref="70" max="-2" attributes="0"/>
+                  <Component id="修改" min="-2" pref="70" max="-2" attributes="0"/>
+              </Group>
+          </Group>
+          <Group type="102" attributes="0">
+              <EmptySpace min="10" pref="10" max="-2" attributes="0"/>
+              <Component id="商城提示语言" min="-2" pref="660" max="-2" attributes="0"/>
+              <EmptySpace min="10" pref="10" max="-2" attributes="0"/>
+              <Component id="显示类型" min="-2" pref="120" max="-2" attributes="0"/>
+              <EmptySpace min="10" pref="10" max="-2" attributes="0"/>
+              <Component id="商品出售状态" min="-2" pref="70" max="-2" attributes="0"/>
+              <EmptySpace min="90" pref="90" max="-2" attributes="0"/>
+              <Component id="jButton3" min="-2" pref="140" max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" attributes="0">
+              <Component id="jTabbedPane2" min="-2" pref="62" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="jScrollPane5" min="-2" pref="492" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="jPanel15" min="-2" pref="90" max="-2" attributes="0"/>
+                  <Component id="jPanel16" min="-2" pref="90" max="-2" attributes="0"/>
+                  <Group type="102" attributes="0">
+                      <Component id="jButton13" min="-2" pref="25" max="-2" attributes="0"/>
+                      <EmptySpace min="5" pref="5" max="-2" attributes="0"/>
+                      <Component id="jButton27" min="-2" pref="25" max="-2" attributes="0"/>
+                      <EmptySpace min="5" pref="5" max="-2" attributes="0"/>
+                      <Component id="添加" min="-2" pref="25" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" attributes="0">
+                      <Component id="jButton24" min="-2" pref="25" max="-2" attributes="0"/>
+                      <EmptySpace min="5" pref="5" max="-2" attributes="0"/>
+                      <Component id="jButton1" min="-2" pref="25" max="-2" attributes="0"/>
+                      <EmptySpace min="5" pref="5" max="-2" attributes="0"/>
+                      <Component id="修改" min="-2" pref="25" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+              <EmptySpace min="10" pref="10" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="jButton3" min="-2" pref="25" max="-2" attributes="0"/>
+                  <Group type="102" attributes="0">
+                      <EmptySpace min="10" pref="10" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="商城提示语言" min="-2" pref="25" max="-2" attributes="0"/>
+                          <Component id="显示类型" min="-2" pref="27" max="-2" attributes="0"/>
+                          <Component id="商品出售状态" min="-2" pref="27" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+              </Group>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Container class="javax.swing.JScrollPane" name="jScrollPane5">
+      <AuxValues>
+        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+      </AuxValues>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JTable" name="charTable">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="&#x5e7c;&#x5706;" size="15" style="0"/>
+            </Property>
+            <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
+              <Table columnCount="9" rowCount="0">
+                <Column editable="false" title="&#x5546;&#x54c1;&#x7f16;&#x7801;" type="java.lang.String"/>
+                <Column editable="false" title="&#x7269;&#x54c1;&#x4ee3;&#x7801;" type="java.lang.Object"/>
+                <Column editable="false" title="&#x9053;&#x5177;&#x540d;&#x79f0;" type="java.lang.Object"/>
+                <Column editable="false" title="&#x6570;&#x91cf;" type="java.lang.Object"/>
+                <Column editable="false" title="&#x4ef7;&#x683c;" type="java.lang.Object"/>
+                <Column editable="false" title="&#x9650;&#x65f6;/&#x5929;" type="java.lang.Object"/>
+                <Column editable="false" title="&#x51fa;&#x552e;&#x72b6;&#x6001;" type="java.lang.Object"/>
+                <Column editable="false" title="&#x4e0a;/&#x4e0b;&#x67b6;" type="java.lang.Object"/>
+                <Column editable="false" title="&#x56fe;&#x6807;" type="java.lang.Object"/>
+              </Table>
+            </Property>
+            <Property name="toolTipText" type="java.lang.String" value=""/>
+            <Property name="columnModel" type="javax.swing.table.TableColumnModel" editor="org.netbeans.modules.form.editors2.TableColumnModelEditor">
+              <TableColumnModel selectionModel="0">
+                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                  <Title/>
+                  <Editor/>
+                  <Renderer/>
+                </Column>
+                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                  <Title/>
+                  <Editor/>
+                  <Renderer/>
+                </Column>
+                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                  <Title/>
+                  <Editor/>
+                  <Renderer/>
+                </Column>
+                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                  <Title/>
+                  <Editor/>
+                  <Renderer/>
+                </Column>
+                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                  <Title/>
+                  <Editor/>
+                  <Renderer/>
+                </Column>
+                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                  <Title/>
+                  <Editor/>
+                  <Renderer/>
+                </Column>
+                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                  <Title/>
+                  <Editor/>
+                  <Renderer/>
+                </Column>
+                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                  <Title/>
+                  <Editor/>
+                  <Renderer/>
+                </Column>
+                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                  <Title/>
+                  <Editor/>
+                  <Renderer/>
+                </Column>
+              </TableColumnModel>
+            </Property>
+            <Property name="rowHeight" type="int" value="30"/>
+            <Property name="tableHeader" type="javax.swing.table.JTableHeader" editor="org.netbeans.modules.form.editors2.JTableHeaderEditor">
+              <TableHeader reorderingAllowed="false" resizingAllowed="true"/>
+            </Property>
+          </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value=""/>
+          </AuxValues>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JTabbedPane" name="jTabbedPane2">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="&#x5e7c;&#x5706;" size="12" style="0"/>
+        </Property>
+      </Properties>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout"/>
+      <SubComponents>
+        <Container class="javax.swing.JPanel" name="jPanel4">
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+              <JTabbedPaneConstraints tabName="&#x70ed;&#x9500;&#x4ea7;&#x54c1;">
+                <Property name="tabTitle" type="java.lang.String" value="&#x70ed;&#x9500;&#x4ea7;&#x54c1;"/>
+              </JTabbedPaneConstraints>
+            </Constraint>
+          </Constraints>
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <Component id="读取热销产品" min="-2" pref="100" max="-2" attributes="0"/>
+                      <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
+                      <Component id="主题馆" min="-2" pref="100" max="-2" attributes="0"/>
+                      <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
+                      <Component id="活动" min="-2" pref="100" max="-2" attributes="0"/>
+                      <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
+                      <Component id="jButton4" min="-2" pref="100" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="读取热销产品" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Component id="主题馆" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Component id="活动" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Component id="jButton4" alignment="0" min="-2" max="-2" attributes="0"/>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+          <SubComponents>
+            <Component class="javax.swing.JButton" name="&#x4e3b;&#x9898;&#x9986;">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="&#x5e7c;&#x5706;" size="12" style="0"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="&#x4e3b;&#x9898;&#x9986;"/>
+                <Property name="toolTipText" type="java.lang.String" value="&lt;html&gt;&#xa;&lt;strong&gt;&lt;font color=&quot;#FF0000&quot;&gt;&#x70b9;&#x51fb;&#x540e;&#xff1b;&lt;/font&gt;&lt;/strong&gt;&lt;br&gt; &#xa;&#x53ef;&#x5728;&lt;strong&gt;&lt;font color=&quot;#0000E3&quot;&gt;&#x4e3b;&#x9898;&#x9986;&lt;/font&gt;&lt;/strong&gt;&#x5206;&#x7c7b;&#x4e0b;&#x6dfb;&#x52a0;&#x5546;&#x54c1;&lt;br&gt; &#xa;&#x663e;&#x793a;&lt;strong&gt;&lt;font color=&quot;#0000E3&quot;&gt;&#x4e3b;&#x4f53;&#x9986;&lt;/font&gt;&lt;/strong&gt;&#x5206;&#x7c7b;&#x4e0b;&#x7684;&#x6240;&#x6709;&#x5546;&#x54c1;&lt;br&gt; "/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="&#x4e3b;&#x9898;&#x9986;ActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JButton" name="&#x8bfb;&#x53d6;&#x70ed;&#x9500;&#x4ea7;&#x54c1;">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="&#x5e7c;&#x5706;" size="12" style="0"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="&#x70ed;&#x9500;&#x4ea7;&#x54c1;"/>
+                <Property name="toolTipText" type="java.lang.String" value="&lt;html&gt;&#xa;&lt;strong&gt;&lt;font color=&quot;#FF0000&quot;&gt;&#x70b9;&#x51fb;&#x540e;&#xff1b;&lt;/font&gt;&lt;/strong&gt;&lt;br&gt; &#xa;&#x53ef;&#x5728;&lt;strong&gt;&lt;font color=&quot;#0000E3&quot;&gt;&#x70ed;&#x9500;&#x4ea7;&#x54c1;&lt;/font&gt;&lt;/strong&gt;&#x5206;&#x7c7b;&#x4e0b;&#x6dfb;&#x52a0;&#x5546;&#x54c1;&lt;br&gt; &#xa;&#x663e;&#x793a;&lt;strong&gt;&lt;font color=&quot;#0000E3&quot;&gt;&#x70ed;&#x9500;&#x4ea7;&#x54c1;&lt;/font&gt;&lt;/strong&gt;&#x5206;&#x7c7b;&#x4e0b;&#x7684;&#x6240;&#x6709;&#x5546;&#x54c1;&lt;br&gt; "/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="&#x8bfb;&#x53d6;&#x70ed;&#x9500;&#x4ea7;&#x54c1;ActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JButton" name="&#x6d3b;&#x52a8;">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="&#x5e7c;&#x5706;" size="12" style="0"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="&#x6d3b;&#x52a8;"/>
+                <Property name="toolTipText" type="java.lang.String" value="&lt;html&gt;&#xa;&lt;strong&gt;&lt;font color=&quot;#FF0000&quot;&gt;&#x70b9;&#x51fb;&#x540e;&#xff1b;&lt;/font&gt;&lt;/strong&gt;&lt;br&gt; &#xa;&#x53ef;&#x5728;&lt;strong&gt;&lt;font color=&quot;#0000E3&quot;&gt;&#x6d3b;&#x52a8;&lt;/font&gt;&lt;/strong&gt;&#x5206;&#x7c7b;&#x4e0b;&#x6dfb;&#x52a0;&#x5546;&#x54c1;&lt;br&gt; &#xa;&#x663e;&#x793a;&lt;strong&gt;&lt;font color=&quot;#0000E3&quot;&gt;&#x6d3b;&#x52a8;&lt;/font&gt;&lt;/strong&gt;&#x5206;&#x7c7b;&#x4e0b;&#x7684;&#x6240;&#x6709;&#x5546;&#x54c1;&lt;br&gt; "/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="&#x6d3b;&#x52a8;ActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JButton" name="jButton4">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="&#x5e7c;&#x5706;" size="12" style="0"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="&#x6bcf;&#x65e5;&#x7279;&#x5356;"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton4ActionPerformed"/>
+              </Events>
+            </Component>
+          </SubComponents>
+        </Container>
+        <Container class="javax.swing.JPanel" name="jPanel5">
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+              <JTabbedPaneConstraints tabName="&#x88c5;&#x5907;">
+                <Property name="tabTitle" type="java.lang.String" value="&#x88c5;&#x5907;"/>
+              </JTabbedPaneConstraints>
+            </Constraint>
+          </Constraints>
+
+          <Layout class="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout">
+            <Property name="useNullLayout" type="boolean" value="false"/>
+          </Layout>
+          <SubComponents>
+            <Component class="javax.swing.JButton" name="&#x5e3d;&#x5b50;">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="&#x5e7c;&#x5706;" size="12" style="0"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="&#x5e3d;&#x5b50;"/>
+                <Property name="toolTipText" type="java.lang.String" value="&lt;html&gt;&#xa;&lt;strong&gt;&lt;font color=&quot;#FF0000&quot;&gt;&#x70b9;&#x51fb;&#x540e;&#xff1b;&lt;/font&gt;&lt;/strong&gt;&lt;br&gt; &#xa;&#x53ef;&#x5728;&lt;strong&gt;&lt;font color=&quot;#0000E3&quot;&gt;&#x5e3d;&#x5b50;&lt;/font&gt;&lt;/strong&gt;&#x5206;&#x7c7b;&#x4e0b;&#x6dfb;&#x52a0;&#x5546;&#x54c1;&lt;br&gt; &#xa;&#x663e;&#x793a;&lt;strong&gt;&lt;font color=&quot;#0000E3&quot;&gt;&#x5e3d;&#x5b50;&lt;/font&gt;&lt;/strong&gt;&#x5206;&#x7c7b;&#x4e0b;&#x7684;&#x6240;&#x6709;&#x5546;&#x54c1;&lt;br&gt; "/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="&#x5e3d;&#x5b50;ActionPerformed"/>
+              </Events>
+              <Constraints>
+                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+                  <AbsoluteConstraints x="0" y="0" width="90" height="-1"/>
+                </Constraint>
+              </Constraints>
+            </Component>
+            <Component class="javax.swing.JButton" name="&#x8138;&#x9970;">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="&#x5e7c;&#x5706;" size="12" style="0"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="&#x8138;&#x9970;"/>
+                <Property name="toolTipText" type="java.lang.String" value="&lt;html&gt;&#xa;&lt;strong&gt;&lt;font color=&quot;#FF0000&quot;&gt;&#x70b9;&#x51fb;&#x540e;&#xff1b;&lt;/font&gt;&lt;/strong&gt;&lt;br&gt; &#xa;&#x53ef;&#x5728;&lt;strong&gt;&lt;font color=&quot;#0000E3&quot;&gt;&#x8138;&#x9970;&lt;/font&gt;&lt;/strong&gt;&#x5206;&#x7c7b;&#x4e0b;&#x6dfb;&#x52a0;&#x5546;&#x54c1;&lt;br&gt; &#xa;&#x663e;&#x793a;&lt;strong&gt;&lt;font color=&quot;#0000E3&quot;&gt;&#x8138;&#x9970;&lt;/font&gt;&lt;/strong&gt;&#x5206;&#x7c7b;&#x4e0b;&#x7684;&#x6240;&#x6709;&#x5546;&#x54c1;&lt;br&gt; "/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="&#x8138;&#x9970;ActionPerformed"/>
+              </Events>
+              <Constraints>
+                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+                  <AbsoluteConstraints x="450" y="0" width="90" height="-1"/>
+                </Constraint>
+              </Constraints>
+            </Component>
+            <Component class="javax.swing.JButton" name="&#x773c;&#x9970;">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="&#x5e7c;&#x5706;" size="12" style="0"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="&#x773c;&#x9970;"/>
+                <Property name="toolTipText" type="java.lang.String" value="&lt;html&gt;&#xa;&lt;strong&gt;&lt;font color=&quot;#FF0000&quot;&gt;&#x70b9;&#x51fb;&#x540e;&#xff1b;&lt;/font&gt;&lt;/strong&gt;&lt;br&gt; &#xa;&#x53ef;&#x5728;&lt;strong&gt;&lt;font color=&quot;#0000E3&quot;&gt;&#x773c;&#x9970;&lt;/font&gt;&lt;/strong&gt;&#x5206;&#x7c7b;&#x4e0b;&#x6dfb;&#x52a0;&#x5546;&#x54c1;&lt;br&gt; &#xa;&#x663e;&#x793a;&lt;strong&gt;&lt;font color=&quot;#0000E3&quot;&gt;&#x773c;&#x9970;&lt;/font&gt;&lt;/strong&gt;&#x5206;&#x7c7b;&#x4e0b;&#x7684;&#x6240;&#x6709;&#x5546;&#x54c1;&lt;br&gt; "/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="&#x773c;&#x9970;ActionPerformed"/>
+              </Events>
+              <Constraints>
+                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+                  <AbsoluteConstraints x="810" y="0" width="90" height="-1"/>
+                </Constraint>
+              </Constraints>
+            </Component>
+            <Component class="javax.swing.JButton" name="&#x957f;&#x888d;">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="&#x5e7c;&#x5706;" size="12" style="0"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="&#x957f;&#x888d;"/>
+                <Property name="toolTipText" type="java.lang.String" value="&lt;html&gt;&#xa;&lt;strong&gt;&lt;font color=&quot;#FF0000&quot;&gt;&#x70b9;&#x51fb;&#x540e;&#xff1b;&lt;/font&gt;&lt;/strong&gt;&lt;br&gt; &#xa;&#x53ef;&#x5728;&lt;strong&gt;&lt;font color=&quot;#0000E3&quot;&gt;&#x957f;&#x888d;&lt;/font&gt;&lt;/strong&gt;&#x5206;&#x7c7b;&#x4e0b;&#x6dfb;&#x52a0;&#x5546;&#x54c1;&lt;br&gt; &#xa;&#x663e;&#x793a;&lt;strong&gt;&lt;font color=&quot;#0000E3&quot;&gt;&#x957f;&#x888d;&lt;/font&gt;&lt;/strong&gt;&#x5206;&#x7c7b;&#x4e0b;&#x7684;&#x6240;&#x6709;&#x5546;&#x54c1;&lt;br&gt; "/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="&#x957f;&#x888d;ActionPerformed"/>
+              </Events>
+              <Constraints>
+                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+                  <AbsoluteConstraints x="360" y="0" width="90" height="-1"/>
+                </Constraint>
+              </Constraints>
+            </Component>
+            <Component class="javax.swing.JButton" name="&#x4e0a;&#x8863;">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="&#x5e7c;&#x5706;" size="12" style="0"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="&#x4e0a;&#x8863;"/>
+                <Property name="toolTipText" type="java.lang.String" value="&lt;html&gt;&#xa;&lt;strong&gt;&lt;font color=&quot;#FF0000&quot;&gt;&#x70b9;&#x51fb;&#x540e;&#xff1b;&lt;/font&gt;&lt;/strong&gt;&lt;br&gt; &#xa;&#x53ef;&#x5728;&lt;strong&gt;&lt;font color=&quot;#0000E3&quot;&gt;&#x4e0a;&#x8863;&lt;/font&gt;&lt;/strong&gt;&#x5206;&#x7c7b;&#x4e0b;&#x6dfb;&#x52a0;&#x5546;&#x54c1;&lt;br&gt; &#xa;&#x663e;&#x793a;&lt;strong&gt;&lt;font color=&quot;#0000E3&quot;&gt;&#x4e0a;&#x8863;&lt;/font&gt;&lt;/strong&gt;&#x5206;&#x7c7b;&#x4e0b;&#x7684;&#x6240;&#x6709;&#x5546;&#x54c1;&lt;br&gt; "/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="&#x4e0a;&#x8863;ActionPerformed"/>
+              </Events>
+              <Constraints>
+                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+                  <AbsoluteConstraints x="1080" y="0" width="90" height="-1"/>
+                </Constraint>
+              </Constraints>
+            </Component>
+            <Component class="javax.swing.JButton" name="&#x88d9;&#x88e4;">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="&#x5e7c;&#x5706;" size="12" style="0"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="&#x88d9;&#x88e4;"/>
+                <Property name="toolTipText" type="java.lang.String" value="&lt;html&gt;&#xa;&lt;strong&gt;&lt;font color=&quot;#FF0000&quot;&gt;&#x70b9;&#x51fb;&#x540e;&#xff1b;&lt;/font&gt;&lt;/strong&gt;&lt;br&gt; &#xa;&#x53ef;&#x5728;&lt;strong&gt;&lt;font color=&quot;#0000E3&quot;&gt;&#x88d9;&#x88e4;&lt;/font&gt;&lt;/strong&gt;&#x5206;&#x7c7b;&#x4e0b;&#x6dfb;&#x52a0;&#x5546;&#x54c1;&lt;br&gt; &#xa;&#x663e;&#x793a;&lt;strong&gt;&lt;font color=&quot;#0000E3&quot;&gt;&#x88d9;&#x88e4;&lt;/font&gt;&lt;/strong&gt;&#x5206;&#x7c7b;&#x4e0b;&#x7684;&#x6240;&#x6709;&#x5546;&#x54c1;&lt;br&gt; "/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="&#x88d9;&#x88e4;ActionPerformed"/>
+              </Events>
+              <Constraints>
+                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+                  <AbsoluteConstraints x="90" y="0" width="90" height="-1"/>
+                </Constraint>
+              </Constraints>
+            </Component>
+            <Component class="javax.swing.JButton" name="&#x978b;&#x5b50;">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="&#x5e7c;&#x5706;" size="12" style="0"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="&#x978b;&#x5b50;"/>
+                <Property name="toolTipText" type="java.lang.String" value="&lt;html&gt;&#xa;&lt;strong&gt;&lt;font color=&quot;#FF0000&quot;&gt;&#x70b9;&#x51fb;&#x540e;&#xff1b;&lt;/font&gt;&lt;/strong&gt;&lt;br&gt; &#xa;&#x53ef;&#x5728;&lt;strong&gt;&lt;font color=&quot;#0000E3&quot;&gt;&#x978b;&#x5b50;&lt;/font&gt;&lt;/strong&gt;&#x5206;&#x7c7b;&#x4e0b;&#x6dfb;&#x52a0;&#x5546;&#x54c1;&lt;br&gt; &#xa;&#x663e;&#x793a;&lt;strong&gt;&lt;font color=&quot;#0000E3&quot;&gt;&#x978b;&#x5b50;&lt;/font&gt;&lt;/strong&gt;&#x5206;&#x7c7b;&#x4e0b;&#x7684;&#x6240;&#x6709;&#x5546;&#x54c1;&lt;br&gt; "/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="&#x978b;&#x5b50;ActionPerformed"/>
+              </Events>
+              <Constraints>
+                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+                  <AbsoluteConstraints x="540" y="0" width="90" height="-1"/>
+                </Constraint>
+              </Constraints>
+            </Component>
+            <Component class="javax.swing.JButton" name="&#x624b;&#x5957;">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="&#x5e7c;&#x5706;" size="12" style="0"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="&#x624b;&#x5957;"/>
+                <Property name="toolTipText" type="java.lang.String" value="&lt;html&gt;&#xa;&lt;strong&gt;&lt;font color=&quot;#FF0000&quot;&gt;&#x70b9;&#x51fb;&#x540e;&#xff1b;&lt;/font&gt;&lt;/strong&gt;&lt;br&gt; &#xa;&#x53ef;&#x5728;&lt;strong&gt;&lt;font color=&quot;#0000E3&quot;&gt;&#x624b;&#x5957;&lt;/font&gt;&lt;/strong&gt;&#x5206;&#x7c7b;&#x4e0b;&#x6dfb;&#x52a0;&#x5546;&#x54c1;&lt;br&gt; &#xa;&#x663e;&#x793a;&lt;strong&gt;&lt;font color=&quot;#0000E3&quot;&gt;&#x624b;&#x5957;&lt;/font&gt;&lt;/strong&gt;&#x5206;&#x7c7b;&#x4e0b;&#x7684;&#x6240;&#x6709;&#x5546;&#x54c1;&lt;br&gt; "/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="&#x624b;&#x5957;ActionPerformed"/>
+              </Events>
+              <Constraints>
+                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+                  <AbsoluteConstraints x="900" y="0" width="90" height="-1"/>
+                </Constraint>
+              </Constraints>
+            </Component>
+            <Component class="javax.swing.JButton" name="&#x6b66;&#x5668;">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="&#x5e7c;&#x5706;" size="12" style="0"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="&#x6b66;&#x5668;"/>
+                <Property name="toolTipText" type="java.lang.String" value="&lt;html&gt;&#xa;&lt;strong&gt;&lt;font color=&quot;#FF0000&quot;&gt;&#x70b9;&#x51fb;&#x540e;&#xff1b;&lt;/font&gt;&lt;/strong&gt;&lt;br&gt; &#xa;&#x53ef;&#x5728;&lt;strong&gt;&lt;font color=&quot;#0000E3&quot;&gt;&#x6b66;&#x5668;&lt;/font&gt;&lt;/strong&gt;&#x5206;&#x7c7b;&#x4e0b;&#x6dfb;&#x52a0;&#x5546;&#x54c1;&lt;br&gt; &#xa;&#x663e;&#x793a;&lt;strong&gt;&lt;font color=&quot;#0000E3&quot;&gt;&#x6b66;&#x5668;&lt;/font&gt;&lt;/strong&gt;&#x5206;&#x7c7b;&#x4e0b;&#x7684;&#x6240;&#x6709;&#x5546;&#x54c1;&lt;br&gt; "/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="&#x6b66;&#x5668;ActionPerformed"/>
+              </Events>
+              <Constraints>
+                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+                  <AbsoluteConstraints x="990" y="0" width="90" height="-1"/>
+                </Constraint>
+              </Constraints>
+            </Component>
+            <Component class="javax.swing.JButton" name="&#x6212;&#x6307;">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="&#x5e7c;&#x5706;" size="12" style="0"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="&#x6212;&#x6307;"/>
+                <Property name="toolTipText" type="java.lang.String" value="&lt;html&gt;&#xa;&lt;strong&gt;&lt;font color=&quot;#FF0000&quot;&gt;&#x70b9;&#x51fb;&#x540e;&#xff1b;&lt;/font&gt;&lt;/strong&gt;&lt;br&gt; &#xa;&#x53ef;&#x5728;&lt;strong&gt;&lt;font color=&quot;#0000E3&quot;&gt;&#x6212;&#x6307;&lt;/font&gt;&lt;/strong&gt;&#x5206;&#x7c7b;&#x4e0b;&#x6dfb;&#x52a0;&#x5546;&#x54c1;&lt;br&gt; &#xa;&#x663e;&#x793a;&lt;strong&gt;&lt;font color=&quot;#0000E3&quot;&gt;&#x6212;&#x6307;&lt;/font&gt;&lt;/strong&gt;&#x5206;&#x7c7b;&#x4e0b;&#x7684;&#x6240;&#x6709;&#x5546;&#x54c1;&lt;br&gt; "/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="&#x6212;&#x6307;ActionPerformed"/>
+              </Events>
+              <Constraints>
+                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+                  <AbsoluteConstraints x="720" y="0" width="90" height="-1"/>
+                </Constraint>
+              </Constraints>
+            </Component>
+            <Component class="javax.swing.JButton" name="&#x98de;&#x9556;">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="&#x5e7c;&#x5706;" size="12" style="0"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="&#x98de;&#x9556;"/>
+                <Property name="toolTipText" type="java.lang.String" value="&lt;html&gt;&#xa;&lt;strong&gt;&lt;font color=&quot;#FF0000&quot;&gt;&#x70b9;&#x51fb;&#x540e;&#xff1b;&lt;/font&gt;&lt;/strong&gt;&lt;br&gt; &#xa;&#x53ef;&#x5728;&lt;strong&gt;&lt;font color=&quot;#0000E3&quot;&gt;&#x98de;&#x9556;&lt;/font&gt;&lt;/strong&gt;&#x5206;&#x7c7b;&#x4e0b;&#x6dfb;&#x52a0;&#x5546;&#x54c1;&lt;br&gt; &#xa;&#x663e;&#x793a;&lt;strong&gt;&lt;font color=&quot;#0000E3&quot;&gt;&#x98de;&#x9556;&lt;/font&gt;&lt;/strong&gt;&#x5206;&#x7c7b;&#x4e0b;&#x7684;&#x6240;&#x6709;&#x5546;&#x54c1;&lt;br&gt; "/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="&#x98de;&#x9556;ActionPerformed"/>
+              </Events>
+              <Constraints>
+                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+                  <AbsoluteConstraints x="270" y="0" width="90" height="-1"/>
+                </Constraint>
+              </Constraints>
+            </Component>
+            <Component class="javax.swing.JButton" name="&#x62ab;&#x98ce;">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="&#x5e7c;&#x5706;" size="12" style="0"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="&#x62ab;&#x98ce;"/>
+                <Property name="toolTipText" type="java.lang.String" value="&lt;html&gt;&#xa;&lt;strong&gt;&lt;font color=&quot;#FF0000&quot;&gt;&#x70b9;&#x51fb;&#x540e;&#xff1b;&lt;/font&gt;&lt;/strong&gt;&lt;br&gt; &#xa;&#x53ef;&#x5728;&lt;strong&gt;&lt;font color=&quot;#0000E3&quot;&gt;&#x62ab;&#x98ce;&lt;/font&gt;&lt;/strong&gt;&#x5206;&#x7c7b;&#x4e0b;&#x6dfb;&#x52a0;&#x5546;&#x54c1;&lt;br&gt; &#xa;&#x663e;&#x793a;&lt;strong&gt;&lt;font color=&quot;#0000E3&quot;&gt;&#x62ab;&#x98ce;&lt;/font&gt;&lt;/strong&gt;&#x5206;&#x7c7b;&#x4e0b;&#x7684;&#x6240;&#x6709;&#x5546;&#x54c1;&lt;br&gt; "/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="&#x62ab;&#x98ce;ActionPerformed"/>
+              </Events>
+              <Constraints>
+                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+                  <AbsoluteConstraints x="180" y="0" width="90" height="-1"/>
+                </Constraint>
+              </Constraints>
+            </Component>
+            <Component class="javax.swing.JButton" name="&#x9a91;&#x5ba0;">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="&#x5e7c;&#x5706;" size="12" style="0"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="&#x9a91;&#x5ba0;"/>
+                <Property name="toolTipText" type="java.lang.String" value="&lt;html&gt;&#xa;&lt;strong&gt;&lt;font color=&quot;#FF0000&quot;&gt;&#x70b9;&#x51fb;&#x540e;&#xff1b;&lt;/font&gt;&lt;/strong&gt;&lt;br&gt; &#xa;&#x53ef;&#x5728;&lt;strong&gt;&lt;font color=&quot;#0000E3&quot;&gt;&#x9a91;&#x5ba0;&lt;/font&gt;&lt;/strong&gt;&#x5206;&#x7c7b;&#x4e0b;&#x6dfb;&#x52a0;&#x5546;&#x54c1;&lt;br&gt; &#xa;&#x663e;&#x793a;&lt;strong&gt;&lt;font color=&quot;#0000E3&quot;&gt;&#x9a91;&#x5ba0;&lt;/font&gt;&lt;/strong&gt;&#x5206;&#x7c7b;&#x4e0b;&#x7684;&#x6240;&#x6709;&#x5546;&#x54c1;&lt;br&gt; "/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="&#x9a91;&#x5ba0;ActionPerformed"/>
+              </Events>
+              <Constraints>
+                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+                  <AbsoluteConstraints x="630" y="0" width="90" height="-1"/>
+                </Constraint>
+              </Constraints>
+            </Component>
+          </SubComponents>
+        </Container>
+        <Container class="javax.swing.JPanel" name="jPanel6">
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+              <JTabbedPaneConstraints tabName="&#x6d88;&#x8017;">
+                <Property name="tabTitle" type="java.lang.String" value="&#x6d88;&#x8017;"/>
+              </JTabbedPaneConstraints>
+            </Constraint>
+          </Constraints>
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <Component id="喜庆物品" min="-2" pref="100" max="-2" attributes="0"/>
+                      <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
+                      <Component id="通讯物品" min="-2" pref="100" max="-2" attributes="0"/>
+                      <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
+                      <Component id="卷轴" min="-2" pref="100" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="喜庆物品" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Component id="通讯物品" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Component id="卷轴" alignment="0" min="-2" max="-2" attributes="0"/>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+          <SubComponents>
+            <Component class="javax.swing.JButton" name="&#x559c;&#x5e86;&#x7269;&#x54c1;">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="&#x5e7c;&#x5706;" size="12" style="0"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="&#x559c;&#x5e86;&#x7269;&#x54c1;"/>
+                <Property name="toolTipText" type="java.lang.String" value="&lt;html&gt;&#xa;&lt;strong&gt;&lt;font color=&quot;#FF0000&quot;&gt;&#x70b9;&#x51fb;&#x540e;&#xff1b;&lt;/font&gt;&lt;/strong&gt;&lt;br&gt; &#xa;&#x53ef;&#x5728;&lt;strong&gt;&lt;font color=&quot;#0000E3&quot;&gt;&#x559c;&#x5e86;&#x7269;&#x54c1;&lt;/font&gt;&lt;/strong&gt;&#x5206;&#x7c7b;&#x4e0b;&#x6dfb;&#x52a0;&#x5546;&#x54c1;&lt;br&gt; &#xa;&#x663e;&#x793a;&lt;strong&gt;&lt;font color=&quot;#0000E3&quot;&gt;&#x559c;&#x5e86;&#x7269;&#x54c1;&lt;/font&gt;&lt;/strong&gt;&#x5206;&#x7c7b;&#x4e0b;&#x7684;&#x6240;&#x6709;&#x5546;&#x54c1;&lt;br&gt; "/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="&#x559c;&#x5e86;&#x7269;&#x54c1;ActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JButton" name="&#x901a;&#x8baf;&#x7269;&#x54c1;">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="&#x5e7c;&#x5706;" size="12" style="0"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="&#x901a;&#x8baf;&#x7269;&#x54c1;"/>
+                <Property name="toolTipText" type="java.lang.String" value="&lt;html&gt;&#xa;&lt;strong&gt;&lt;font color=&quot;#FF0000&quot;&gt;&#x70b9;&#x51fb;&#x540e;&#xff1b;&lt;/font&gt;&lt;/strong&gt;&lt;br&gt; &#xa;&#x53ef;&#x5728;&lt;strong&gt;&lt;font color=&quot;#0000E3&quot;&gt;&#x901a;&#x8baf;&#x7269;&#x54c1;&lt;/font&gt;&lt;/strong&gt;&#x5206;&#x7c7b;&#x4e0b;&#x6dfb;&#x52a0;&#x5546;&#x54c1;&lt;br&gt; &#xa;&#x663e;&#x793a;&lt;strong&gt;&lt;font color=&quot;#0000E3&quot;&gt;&#x901a;&#x8baf;&#x7269;&#x54c1;&lt;/font&gt;&lt;/strong&gt;&#x5206;&#x7c7b;&#x4e0b;&#x7684;&#x6240;&#x6709;&#x5546;&#x54c1;&lt;br&gt; "/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="&#x901a;&#x8baf;&#x7269;&#x54c1;ActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JButton" name="&#x5377;&#x8f74;">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="&#x5e7c;&#x5706;" size="12" style="0"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="&#x5377;&#x8f74;"/>
+                <Property name="toolTipText" type="java.lang.String" value="&lt;html&gt;&#xa;&lt;strong&gt;&lt;font color=&quot;#FF0000&quot;&gt;&#x70b9;&#x51fb;&#x540e;&#xff1b;&lt;/font&gt;&lt;/strong&gt;&lt;br&gt; &#xa;&#x53ef;&#x5728;&lt;strong&gt;&lt;font color=&quot;#0000E3&quot;&gt;&#x5377;&#x8f74;&lt;/font&gt;&lt;/strong&gt;&#x5206;&#x7c7b;&#x4e0b;&#x6dfb;&#x52a0;&#x5546;&#x54c1;&lt;br&gt; &#xa;&#x663e;&#x793a;&lt;strong&gt;&lt;font color=&quot;#0000E3&quot;&gt;&#x5377;&#x8f74;&lt;/font&gt;&lt;/strong&gt;&#x5206;&#x7c7b;&#x4e0b;&#x7684;&#x6240;&#x6709;&#x5546;&#x54c1;&lt;br&gt; "/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="&#x5377;&#x8f74;ActionPerformed"/>
+              </Events>
+            </Component>
+          </SubComponents>
+        </Container>
+        <Container class="javax.swing.JPanel" name="jPanel7">
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+              <JTabbedPaneConstraints tabName="&#x5176;&#x4ed6;">
+                <Property name="tabTitle" type="java.lang.String" value="&#x5176;&#x4ed6;"/>
+              </JTabbedPaneConstraints>
+            </Constraint>
+          </Constraints>
+
+          <Layout class="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout">
+            <Property name="useNullLayout" type="boolean" value="false"/>
+          </Layout>
+          <SubComponents>
+            <Component class="javax.swing.JButton" name="&#x4f1a;&#x5458;&#x5361;">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="&#x5e7c;&#x5706;" size="12" style="0"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="&#x4f1a;&#x5458;&#x5361;"/>
+                <Property name="toolTipText" type="java.lang.String" value="&lt;html&gt;&#xa;&lt;strong&gt;&lt;font color=&quot;#FF0000&quot;&gt;&#x70b9;&#x51fb;&#x540e;&#xff1b;&lt;/font&gt;&lt;/strong&gt;&lt;br&gt; &#xa;&#x53ef;&#x5728;&lt;strong&gt;&lt;font color=&quot;#0000E3&quot;&gt;&#x4f1a;&#x5458;&#x5361;&lt;/font&gt;&lt;/strong&gt;&#x5206;&#x7c7b;&#x4e0b;&#x6dfb;&#x52a0;&#x5546;&#x54c1;&lt;br&gt; &#xa;&#x663e;&#x793a;&lt;strong&gt;&lt;font color=&quot;#0000E3&quot;&gt;&#x4f1a;&#x5458;&#x5361;&lt;/font&gt;&lt;/strong&gt;&#x5206;&#x7c7b;&#x4e0b;&#x7684;&#x6240;&#x6709;&#x5546;&#x54c1;&lt;br&gt; "/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="&#x4f1a;&#x5458;&#x5361;ActionPerformed"/>
+              </Events>
+              <Constraints>
+                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+                  <AbsoluteConstraints x="0" y="0" width="100" height="-1"/>
+                </Constraint>
+              </Constraints>
+            </Component>
+            <Component class="javax.swing.JButton" name="&#x8868;&#x60c5;">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="&#x5e7c;&#x5706;" size="12" style="0"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="&#x8868;&#x60c5;"/>
+                <Property name="toolTipText" type="java.lang.String" value="&lt;html&gt;&#xa;&lt;strong&gt;&lt;font color=&quot;#FF0000&quot;&gt;&#x70b9;&#x51fb;&#x540e;&#xff1b;&lt;/font&gt;&lt;/strong&gt;&lt;br&gt; &#xa;&#x53ef;&#x5728;&lt;strong&gt;&lt;font color=&quot;#0000E3&quot;&gt;&#x8868;&#x60c5;&lt;/font&gt;&lt;/strong&gt;&#x5206;&#x7c7b;&#x4e0b;&#x6dfb;&#x52a0;&#x5546;&#x54c1;&lt;br&gt; &#xa;&#x663e;&#x793a;&lt;strong&gt;&lt;font color=&quot;#0000E3&quot;&gt;&#x8868;&#x60c5;&lt;/font&gt;&lt;/strong&gt;&#x5206;&#x7c7b;&#x4e0b;&#x7684;&#x6240;&#x6709;&#x5546;&#x54c1;&lt;br&gt; "/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="&#x8868;&#x60c5;ActionPerformed"/>
+              </Events>
+              <Constraints>
+                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+                  <AbsoluteConstraints x="100" y="0" width="100" height="-1"/>
+                </Constraint>
+              </Constraints>
+            </Component>
+            <Component class="javax.swing.JButton" name="&#x4e2a;&#x4eba;&#x5546;&#x5e97;">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="&#x5e7c;&#x5706;" size="12" style="0"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="&#x4e2a;&#x4eba;&#x5546;&#x5e97;"/>
+                <Property name="toolTipText" type="java.lang.String" value="&lt;html&gt;&#xa;&lt;strong&gt;&lt;font color=&quot;#FF0000&quot;&gt;&#x70b9;&#x51fb;&#x540e;&#xff1b;&lt;/font&gt;&lt;/strong&gt;&lt;br&gt; &#xa;&#x53ef;&#x5728;&lt;strong&gt;&lt;font color=&quot;#0000E3&quot;&gt;&#x4e2a;&#x4eba;&#x5546;&#x5e97;&lt;/font&gt;&lt;/strong&gt;&#x5206;&#x7c7b;&#x4e0b;&#x6dfb;&#x52a0;&#x5546;&#x54c1;&lt;br&gt; &#xa;&#x663e;&#x793a;&lt;strong&gt;&lt;font color=&quot;#0000E3&quot;&gt;&#x4e2a;&#x4eba;&#x5546;&#x5e97;&lt;/font&gt;&lt;/strong&gt;&#x5206;&#x7c7b;&#x4e0b;&#x7684;&#x6240;&#x6709;&#x5546;&#x54c1;&lt;br&gt; "/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="&#x4e2a;&#x4eba;&#x5546;&#x5e97;ActionPerformed"/>
+              </Events>
+              <Constraints>
+                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+                  <AbsoluteConstraints x="200" y="0" width="100" height="-1"/>
+                </Constraint>
+              </Constraints>
+            </Component>
+            <Component class="javax.swing.JButton" name="&#x7eaa;&#x5ff5;&#x65e5;">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="&#x5e7c;&#x5706;" size="12" style="0"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="&#x7eaa;&#x5ff5;&#x65e5;"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="&#x7eaa;&#x5ff5;&#x65e5;ActionPerformed"/>
+              </Events>
+              <Constraints>
+                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+                  <AbsoluteConstraints x="500" y="0" width="100" height="-1"/>
+                </Constraint>
+              </Constraints>
+            </Component>
+            <Component class="javax.swing.JButton" name="&#x6e38;&#x620f;">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="&#x5e7c;&#x5706;" size="12" style="0"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="&#x6e38;&#x620f;"/>
+                <Property name="toolTipText" type="java.lang.String" value="&lt;html&gt;&#xa;&lt;strong&gt;&lt;font color=&quot;#FF0000&quot;&gt;&#x70b9;&#x51fb;&#x540e;&#xff1b;&lt;/font&gt;&lt;/strong&gt;&lt;br&gt; &#xa;&#x53ef;&#x5728;&lt;strong&gt;&lt;font color=&quot;#0000E3&quot;&gt;&#x6e38;&#x620f;&lt;/font&gt;&lt;/strong&gt;&#x5206;&#x7c7b;&#x4e0b;&#x6dfb;&#x52a0;&#x5546;&#x54c1;&lt;br&gt; &#xa;&#x663e;&#x793a;&lt;strong&gt;&lt;font color=&quot;#0000E3&quot;&gt;&#x6e38;&#x620f;&lt;/font&gt;&lt;/strong&gt;&#x5206;&#x7c7b;&#x4e0b;&#x7684;&#x6240;&#x6709;&#x5546;&#x54c1;&lt;br&gt; "/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="&#x6e38;&#x620f;ActionPerformed"/>
+              </Events>
+              <Constraints>
+                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+                  <AbsoluteConstraints x="400" y="0" width="100" height="-1"/>
+                </Constraint>
+              </Constraints>
+            </Component>
+            <Component class="javax.swing.JButton" name="&#x6548;&#x679c;">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="&#x5e7c;&#x5706;" size="12" style="0"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="&#x6548;&#x679c;"/>
+                <Property name="toolTipText" type="java.lang.String" value="&lt;html&gt;&#xa;&lt;strong&gt;&lt;font color=&quot;#FF0000&quot;&gt;&#x70b9;&#x51fb;&#x540e;&#xff1b;&lt;/font&gt;&lt;/strong&gt;&lt;br&gt; &#xa;&#x53ef;&#x5728;&lt;strong&gt;&lt;font color=&quot;#0000E3&quot;&gt;&#x6548;&#x679c;&lt;/font&gt;&lt;/strong&gt;&#x5206;&#x7c7b;&#x4e0b;&#x6dfb;&#x52a0;&#x5546;&#x54c1;&lt;br&gt; &#xa;&#x663e;&#x793a;&lt;strong&gt;&lt;font color=&quot;#0000E3&quot;&gt;&#x6548;&#x679c;&lt;/font&gt;&lt;/strong&gt;&#x5206;&#x7c7b;&#x4e0b;&#x7684;&#x6240;&#x6709;&#x5546;&#x54c1;&lt;br&gt; "/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="&#x6548;&#x679c;ActionPerformed"/>
+              </Events>
+              <Constraints>
+                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+                  <AbsoluteConstraints x="300" y="0" width="100" height="-1"/>
+                </Constraint>
+              </Constraints>
+            </Component>
+          </SubComponents>
+        </Container>
+        <Container class="javax.swing.JPanel" name="jPanel8">
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+              <JTabbedPaneConstraints tabName="&#x5ba0;&#x7269;">
+                <Property name="tabTitle" type="java.lang.String" value="&#x5ba0;&#x7269;"/>
+              </JTabbedPaneConstraints>
+            </Constraint>
+          </Constraints>
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <Component id="宠物" min="-2" pref="100" max="-2" attributes="0"/>
+                      <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
+                      <Component id="宠物服饰" min="-2" pref="100" max="-2" attributes="0"/>
+                      <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
+                      <Component id="其他" min="-2" pref="100" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="宠物" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Component id="宠物服饰" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Component id="其他" alignment="0" min="-2" max="-2" attributes="0"/>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+          <SubComponents>
+            <Component class="javax.swing.JButton" name="&#x5ba0;&#x7269;">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="&#x5e7c;&#x5706;" size="12" style="0"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="&#x5ba0;&#x7269;"/>
+                <Property name="toolTipText" type="java.lang.String" value="&lt;html&gt;&#xa;&lt;strong&gt;&lt;font color=&quot;#FF0000&quot;&gt;&#x70b9;&#x51fb;&#x540e;&#xff1b;&lt;/font&gt;&lt;/strong&gt;&lt;br&gt; &#xa;&#x53ef;&#x5728;&lt;strong&gt;&lt;font color=&quot;#0000E3&quot;&gt;&#x5ba0;&#x7269;&lt;/font&gt;&lt;/strong&gt;&#x5206;&#x7c7b;&#x4e0b;&#x6dfb;&#x52a0;&#x5546;&#x54c1;&lt;br&gt; &#xa;&#x663e;&#x793a;&lt;strong&gt;&lt;font color=&quot;#0000E3&quot;&gt;&#x5ba0;&#x7269;&lt;/font&gt;&lt;/strong&gt;&#x5206;&#x7c7b;&#x4e0b;&#x7684;&#x6240;&#x6709;&#x5546;&#x54c1;&lt;br&gt; "/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="&#x5ba0;&#x7269;ActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JButton" name="&#x5ba0;&#x7269;&#x670d;&#x9970;">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="&#x5e7c;&#x5706;" size="12" style="0"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="&#x5ba0;&#x7269;&#x670d;&#x9970;"/>
+                <Property name="toolTipText" type="java.lang.String" value="&lt;html&gt;&#xa;&lt;strong&gt;&lt;font color=&quot;#FF0000&quot;&gt;&#x70b9;&#x51fb;&#x540e;&#xff1b;&lt;/font&gt;&lt;/strong&gt;&lt;br&gt; &#xa;&#x53ef;&#x5728;&lt;strong&gt;&lt;font color=&quot;#0000E3&quot;&gt;&#x5ba0;&#x7269;&#x670d;&#x9970;&lt;/font&gt;&lt;/strong&gt;&#x5206;&#x7c7b;&#x4e0b;&#x6dfb;&#x52a0;&#x5546;&#x54c1;&lt;br&gt; &#xa;&#x663e;&#x793a;&lt;strong&gt;&lt;font color=&quot;#0000E3&quot;&gt;&#x5ba0;&#x7269;&#x670d;&#x9970;&lt;/font&gt;&lt;/strong&gt;&#x5206;&#x7c7b;&#x4e0b;&#x7684;&#x6240;&#x6709;&#x5546;&#x54c1;&lt;br&gt; "/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="&#x5ba0;&#x7269;&#x670d;&#x9970;ActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JButton" name="&#x5176;&#x4ed6;">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="&#x5e7c;&#x5706;" size="12" style="0"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="&#x5176;&#x4ed6;"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="&#x5176;&#x4ed6;ActionPerformed"/>
+              </Events>
+            </Component>
+          </SubComponents>
+        </Container>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JPanel" name="jPanel15">
+      <Properties>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
+            <TitledBorder justification="2" position="2" title="&#x51fa;&#x552e;&#x72b6;&#x6001;">
+              <Font PropertyName="font" name="&#x5e7c;&#x5706;" size="18" style="0"/>
+            </TitledBorder>
+          </Border>
+        </Property>
+      </Properties>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout">
+        <Property name="useNullLayout" type="boolean" value="false"/>
+      </Layout>
+      <SubComponents>
+        <Component class="javax.swing.JButton" name="&#x65e0;&#x51fa;&#x552e;&#x72b6;&#x6001;">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="&#x5e7c;&#x5706;" size="15" style="0"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="&#x65e0;"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="&#x65e0;&#x51fa;&#x552e;&#x72b6;&#x6001;ActionPerformed"/>
+          </Events>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+              <AbsoluteConstraints x="10" y="30" width="70" height="25"/>
+            </Constraint>
+          </Constraints>
+        </Component>
+        <Component class="javax.swing.JButton" name="NEW">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="&#x5e7c;&#x5706;" size="15" style="0"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="NEW"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="NEWActionPerformed"/>
+          </Events>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+              <AbsoluteConstraints x="10" y="55" width="70" height="25"/>
+            </Constraint>
+          </Constraints>
+        </Component>
+        <Component class="javax.swing.JButton" name="Sale">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="&#x5e7c;&#x5706;" size="15" style="0"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Sale"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="SaleActionPerformed"/>
+          </Events>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+              <AbsoluteConstraints x="80" y="30" width="70" height="25"/>
+            </Constraint>
+          </Constraints>
+        </Component>
+        <Component class="javax.swing.JButton" name="HOT">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="&#x5e7c;&#x5706;" size="15" style="0"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="HOT"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="HOTActionPerformed"/>
+          </Events>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+              <AbsoluteConstraints x="150" y="30" width="70" height="25"/>
+            </Constraint>
+          </Constraints>
+        </Component>
+        <Component class="javax.swing.JButton" name="event">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="&#x5e7c;&#x5706;" size="15" style="0"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="event"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="eventActionPerformed"/>
+          </Events>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+              <AbsoluteConstraints x="80" y="55" width="140" height="25"/>
+            </Constraint>
+          </Constraints>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JPanel" name="jPanel16">
+      <Properties>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
+            <TitledBorder justification="2" position="2" title="&#x6dfb;&#x52a0;&#x503c;">
+              <Font PropertyName="font" name="&#x5e7c;&#x5706;" size="18" style="0"/>
+            </TitledBorder>
+          </Border>
+        </Property>
+      </Properties>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout">
+        <Property name="useNullLayout" type="boolean" value="false"/>
+      </Layout>
+      <SubComponents>
+        <Component class="javax.swing.JTextField" name="&#x5546;&#x54c1;&#x6570;&#x91cf;">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="&#x5e7c;&#x5706;" size="12" style="0"/>
+            </Property>
+          </Properties>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+              <AbsoluteConstraints x="235" y="55" width="65" height="20"/>
+            </Constraint>
+          </Constraints>
+        </Component>
+        <Component class="javax.swing.JTextField" name="&#x5546;&#x54c1;&#x7f16;&#x7801;">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="&#x5e7c;&#x5706;" size="12" style="0"/>
+            </Property>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="&#x5546;&#x54c1;&#x7f16;&#x7801;ActionPerformed"/>
+          </Events>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+              <AbsoluteConstraints x="84" y="25" width="65" height="20"/>
+            </Constraint>
+          </Constraints>
+        </Component>
+        <Component class="javax.swing.JTextField" name="&#x5546;&#x54c1;&#x4ee3;&#x7801;">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="&#x5e7c;&#x5706;" size="12" style="0"/>
+            </Property>
+          </Properties>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+              <AbsoluteConstraints x="84" y="55" width="65" height="-1"/>
+            </Constraint>
+          </Constraints>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel30">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="&#x5e7c;&#x5706;" size="15" style="0"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="&#x5546;&#x54c1;&#x6570;&#x91cf;&#xff1b;"/>
+          </Properties>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+              <AbsoluteConstraints x="160" y="50" width="-1" height="30"/>
+            </Constraint>
+          </Constraints>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel29">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="&#x5e7c;&#x5706;" size="15" style="0"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="&#x5546;&#x54c1;&#x4ee3;&#x7801;&#xff1b;"/>
+          </Properties>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+              <AbsoluteConstraints x="10" y="50" width="-1" height="30"/>
+            </Constraint>
+          </Constraints>
+        </Component>
+        <Component class="javax.swing.JTextField" name="&#x5546;&#x54c1;&#x4ef7;&#x683c;">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="&#x5e7c;&#x5706;" size="12" style="0"/>
+            </Property>
+          </Properties>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+              <AbsoluteConstraints x="230" y="30" width="65" height="20"/>
+            </Constraint>
+          </Constraints>
+        </Component>
+        <Component class="javax.swing.JTextField" name="&#x5546;&#x54c1;&#x65f6;&#x95f4;">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="&#x5e7c;&#x5706;" size="12" style="0"/>
+            </Property>
+          </Properties>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+              <AbsoluteConstraints x="380" y="55" width="65" height="20"/>
+            </Constraint>
+          </Constraints>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel33">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="&#x5e7c;&#x5706;" size="15" style="0"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="&#x9650;&#x65f6;&#x65f6;&#x95f4;&#xff1b;"/>
+          </Properties>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+              <AbsoluteConstraints x="310" y="50" width="-1" height="30"/>
+            </Constraint>
+          </Constraints>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel34">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="&#x5e7c;&#x5706;" size="15" style="0"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="&#x5546;&#x54c1;&#x7f16;&#x7801;&#xff1b;"/>
+          </Properties>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+              <AbsoluteConstraints x="10" y="20" width="-1" height="30"/>
+            </Constraint>
+          </Constraints>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel35">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="&#x5e7c;&#x5706;" size="15" style="0"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="&#x5546;&#x54c1;&#x4ef7;&#x683c;&#xff1b;"/>
+          </Properties>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+              <AbsoluteConstraints x="160" y="20" width="90" height="30"/>
+            </Constraint>
+          </Constraints>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Component class="javax.swing.JTextField" name="&#x5546;&#x54c1;&#x51fa;&#x552e;&#x72b6;&#x6001;">
+      <Properties>
+        <Property name="editable" type="boolean" value="false"/>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="&#x5e7c;&#x5706;" size="12" style="0"/>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="&#x5546;&#x54c1;&#x51fa;&#x552e;&#x72b6;&#x6001;ActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JTextField" name="&#x663e;&#x793a;&#x7c7b;&#x578b;">
+      <Properties>
+        <Property name="editable" type="boolean" value="false"/>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="&#x5e7c;&#x5706;" size="14" style="1"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="33" green="0" red="ff" type="rgb"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="&#x6d4b;&#x8bd5;&#x5b57;&#x4f53;"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="&#x663e;&#x793a;&#x7c7b;&#x578b;ActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JLabel" name="&#x5546;&#x57ce;&#x63d0;&#x793a;&#x8bed;&#x8a00;">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="&#x5e7c;&#x5706;" size="18" style="0"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="[&#x4fe1;&#x606f;]:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="jButton13">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="&#x5e7c;&#x5706;" size="15" style="0"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="&#x4e0a;&#x67b6;"/>
+        <Property name="toolTipText" type="java.lang.String" value="&lt;html&gt;&#xa;&lt;strong&gt;&lt;font color=&quot;#FF0000&quot;&gt;&#x4e0a;&#x67b6;&#xff1b;&lt;/font&gt;&lt;/strong&gt;&lt;br&gt;&#xa;1.&#x9009;&#x62e9;&#x7269;&#x54c1;&lt;br&gt;&#xa;2.&#x4e0a;&#x67b6;/&#x4e0b;&#x67b6;&lt;br&gt;"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton13ActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="jButton27">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="&#x5e7c;&#x5706;" size="15" style="0"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="&#x4e0b;&#x67b6;"/>
+        <Property name="toolTipText" type="java.lang.String" value="&lt;html&gt;&#xa;&lt;strong&gt;&lt;font color=&quot;#FF0000&quot;&gt;&#x4e0b;&#x67b6;&#xff1b;&lt;/font&gt;&lt;/strong&gt;&lt;br&gt;&#xa;1.&#x9009;&#x62e9;&#x7269;&#x54c1;&lt;br&gt;&#xa;2.&#x4e0a;&#x67b6;/&#x4e0b;&#x67b6;&lt;br&gt;"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton27ActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="&#x6dfb;&#x52a0;">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="&#x5e7c;&#x5706;" size="15" style="0"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="&#x6dfb;&#x52a0;"/>
+        <Property name="toolTipText" type="java.lang.String" value="&lt;html&gt;&#xa;&lt;strong&gt;&lt;font color=&quot;#FF0000&quot;&gt;&#x6dfb;&#x52a0;&#xff1b;&lt;/font&gt;&lt;/strong&gt;&lt;br&gt; &#xa;1.&#x9009;&#x62e9;&#x7269;&#x54c1;&#x5206;&#x7c7b;&lt;br&gt;&#xa;2.&#x8f93;&#x5165;&#x5546;&#x54c1;&#x4ee3;&#x7801;&lt;br&gt;&#xa;3.&#x8f93;&#x5165;&#x5546;&#x54c1;&#x6570;&#x91cf;&lt;br&gt;&#xa;4.&#x8f93;&#x5165;&#x5546;&#x54c1;&#x4ef7;&#x683c;&lt;br&gt;&#xa;5.&#x8f93;&#x5165;&#x9650;&#x65f6;&#x65f6;&#x95f4;(0&#x4ee3;&#x8868;&#x6c38;&#x4e45;)&lt;br&gt;&#xa;6.&#x9009;&#x62e9;&#x51fa;&#x552e;&#x72b6;&#x6001;&lt;br&gt;"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="&#x6dfb;&#x52a0;ActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="&#x4fee;&#x6539;">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="&#x5e7c;&#x5706;" size="15" style="0"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="&#x4fee;&#x6539;"/>
+        <Property name="toolTipText" type="java.lang.String" value="&lt;html&gt;&#xa;&lt;strong&gt;&lt;font color=&quot;#FF0000&quot;&gt;&#x4fee;&#x6539;&#xff1b;&lt;/font&gt;&lt;/strong&gt;&lt;br&gt; &#xa;1.&#x5728;&#x5217;&#x8868;&#x4e2d;&#x9009;&#x62e9;&#x9700;&#x8981;&#x4fee;&#x6539;&#x7684;&#x7269;&#x54c1;&lt;br&gt;&#xa;2.&#x5728;&#x6587;&#x672c;&#x6846;&#x4e2d;&#x8f93;&#x5165;&#x4fee;&#x6539;&#x503c;&lt;br&gt;&#xa;"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="&#x4fee;&#x6539;ActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="jButton1">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="&#x5e7c;&#x5706;" size="15" style="0"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="ff" green="0" red="ff" type="rgb"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="&#x5237;&#x65b0;"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton1ActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="jButton24">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="&#x5e7c;&#x5706;" size="15" style="0"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="&#x5220;&#x9664;"/>
+        <Property name="toolTipText" type="java.lang.String" value="&lt;html&gt;&#xa;&lt;strong&gt;&lt;font color=&quot;#FF0000&quot;&gt;&#x5220;&#x9664;&#xff1b;&lt;/font&gt;&lt;/strong&gt;&lt;br&gt;&#xa;1.&#x9009;&#x62e9;&#x7269;&#x54c1;&lt;br&gt;&#xa;2.&#x5220;&#x9664;&lt;br&gt;"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton24ActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="jButton3">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="&#x5e7c;&#x5706;" size="15" style="0"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="&#x91cd;&#x8f7d;&#x5546;&#x57ce;"/>
+        <Property name="toolTipText" type="java.lang.String" value="&lt;html&gt;&#xa;&lt;strong&gt;&lt;font color=&quot;#FF0000&quot;&gt;&#x91cd;&#x8f7d;&#x5546;&#x57ce;&#xff1b;&lt;/font&gt;&lt;/strong&gt;&lt;br&gt;&#xa;&#x5728;&#x5546;&#x57ce;&#x63a7;&#x5236;&#x53f0;&#x4e2d;&#x7684;&#x4fee;&#x6539;&#x9700;&#x8981;&#x91cd;&#x8f7d;&#x624d;&#x80fd;&#x5728;&#x6e38;&#x620f;&#x4e2d;&#x751f;&#x6548;"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton3ActionPerformed"/>
+      </Events>
+    </Component>
+  </SubComponents>
+</Form>

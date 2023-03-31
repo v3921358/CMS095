@@ -1,0 +1,101 @@
+var love = "#fEffect/CharacterEff/1022223/4/0#"; // 爱心
+var redArrow = "#fUI/UIWindow/Quest/icon6/7#"; // 箭头
+var rect = "#fUI/UIWindow/Quest/icon3/6#"; // 正方形
+var blueArrow = "#fUI/UIWindow/Quest/icon2/7#"; // 蓝色箭头
+var rn = "\r\n\r\n"; // 换行
+var itemId = 4001126; // 给物品id
+var itemId0 = 4031821; // 制作出来物品id
+var bl = 300; // 换算倍率
+var nxToItemCount = 1; // 点券兑换时，对物品数量，即1000点券=1物品
+var nx2ToItemCount = 1; // 抵用券兑换时，对物品数量，即1000点券=1物品
+var moseToItemCount = 10000000; // 金币兑换时，对物品数量，即10000000金币=1物品
+var itemToNXCount = 1; // 物品对点券数量
+var itemToMoseCount = 10000000; // 物品对金币数量
+
+var changeMode = 0; // 兑换类型
+
+function start() {
+    status = -1;
+    action(1, 0, 0);
+}
+
+function action(mode, type, selection) {
+    var text;
+    if (mode === -1) {
+        cm.dispose();
+    } else {
+        if (status >= 0 && mode === 0) {
+
+            cm.sendOk("感谢你的光临！");
+            cm.dispose();
+            return;
+        }
+
+        if (mode === 1)
+            status++;
+        else
+            status--;
+
+        if (status < 2)
+            changeMode = 0;
+        if(!cm.canHold(4002003)){
+            cm.sendOk("背包空间不足！");
+            cm.dispose();
+            return;
+        }
+        if (status === 0) {
+            text = "你好#b#h ##k，这里可以使用#z" + itemId + "##v" + itemId + "#兑换#z" + itemId0 + "##v" + itemId0 + "#！" + rn;
+            
+            text += "#L4##b背包有#z" + itemId + "##b" + rn;
+
+
+            cm.sendSimple(text);
+        } else if (status === 1) {
+            changeMode = selection;
+
+            if (selection === 1) { // 点券换邮票
+                text = nxToItemCount + "点券 = 1 #v" + itemId + "#" + rn;
+                text += "现在请输入你想要兑换的个数：";
+                cm.sendGetText(text);
+           
+            } else if (selection === 4) { // 邮票换点券
+                text = "" + bl + " #z" + itemId + "##v" + itemId + "# 可以加工制作 " + itemToNXCount + "#z" + itemId0 + "##v" + itemId0 + "#" + rn;
+                text += "请问你要制作几个？";
+                cm.sendGetText(text);
+    
+            }
+        } else if (status === 2) {
+            var count = parseInt(cm.getText());
+            if (isNaN(count)) {
+                cm.sendOk("数量输入有误！")
+                cm.dispose();
+                return;
+            }
+
+            if (changeMode === 1) {
+                if (cm.getPlayer().getCSPoints(1) >= count * nxToItemCount) {
+                    cm.gainNX(-count * nxToItemCount);
+                    cm.gainItem(itemId, count);
+                    cm.sendOk("兑换成功，获得" + count + "#v" + itemId + "#");
+                    cm.dispose();
+                } else {
+                    cm.sendOk("点券数量不足，无法换购！");
+                    cm.dispose();
+                }
+
+            } else if (changeMode === 4) {
+                if (cm.haveItem(itemId, count*bl)) {
+                    cm.gainItem(itemId, -count*bl);
+				
+                   cm.gainItem(itemId0, count);
+                    cm.sendOk("制作成功，获得" + (count * itemToNXCount) + "#z" + itemId0 + "##v" + itemId0 + "#");
+                    cm.dispose();
+                } else {
+                    cm.sendOk("#v" + itemId + "#数量不足无法制作！");
+                    cm.dispose();
+            
+                }
+            }
+        }
+    }
+}
