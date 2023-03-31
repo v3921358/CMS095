@@ -2182,17 +2182,17 @@ public class World {
 
                 if (rate.equals("经验")) {
                     for (ChannelServer cservs : ChannelServer.getAllInstances()) {
-                        cservs.setExpRate(Integer.parseInt(ServerProperties.getProperty("配置.exp")));
+                        cservs.setExpRate(Integer.parseInt(ServerProperties.getProperty("windyboy.cms095.exp")));
                         cservs.broadcastPacket(MaplePacketCreator.serverNotice(6, "[系统公告]：经验倍率活动已经结束，已经恢复正常值。"));
                     }
                 } else if (rate.equals("爆率")) {
                     for (ChannelServer cservs : ChannelServer.getAllInstances()) {
-                        cservs.setDropRate(Integer.parseInt(ServerProperties.getProperty("配置.drop")));
+                        cservs.setDropRate(Integer.parseInt(ServerProperties.getProperty("windyboy.cms095.drop")));
                         cservs.broadcastPacket(MaplePacketCreator.serverNotice(6, "[系统公告]：爆物倍率活动已经结束，已经恢复正常值。"));
                     }
                 } else if (rate.equals("金币")) {
                     for (ChannelServer cservs : ChannelServer.getAllInstances()) {
-                        cservs.setMesoRate(Integer.parseInt(ServerProperties.getProperty("配置.meso")));
+                        cservs.setMesoRate(Integer.parseInt(ServerProperties.getProperty("windyboy.cms095.meso")));
                         cservs.broadcastPacket(MaplePacketCreator.serverNotice(6, "[系统公告]：金币倍率活动已经结束，已经恢复正常值。"));
                     }
                 } else if (rate.equals("宠物经验")) {

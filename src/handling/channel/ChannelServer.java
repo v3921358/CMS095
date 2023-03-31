@@ -81,19 +81,19 @@ public class ChannelServer {
     public final void run_startup_configurations() {
         setChannel(channel); //instances.put
         try {
-            expRate = Integer.parseInt(ServerProperties.getProperty("配置.exp"));
-            mesoRate = Integer.parseInt(ServerProperties.getProperty("配置.meso"));
-            dropRate = Integer.parseInt(ServerProperties.getProperty("配置.drop"));
-            serverMessage = ServerProperties.getProperty("配置.serverMessage");
-            serverName = ServerProperties.getProperty("配置.serverName");
-            flags = Integer.parseInt(ServerProperties.getProperty("配置.flags", "0"));
-            adminOnly = Boolean.parseBoolean(ServerProperties.getProperty("配置.admin", "false"));
-            eventSM = new EventScriptManager(this, ServerProperties.getProperty("配置.events").split(","));
-            port = Short.parseShort(ServerProperties.getProperty("配置.net.port" + channel, String.valueOf(DEFAULT_PORT + channel)));
+            expRate = Integer.parseInt(ServerProperties.getProperty("windyboy.cms095.exp"));
+            mesoRate = Integer.parseInt(ServerProperties.getProperty("windyboy.cms095.meso"));
+            dropRate = Integer.parseInt(ServerProperties.getProperty("windyboy.cms095.drop"));
+            serverMessage = ServerProperties.getProperty("windyboy.cms095.serverMessage");
+            serverName = ServerProperties.getProperty("windyboy.cms095.serverName");
+            flags = Integer.parseInt(ServerProperties.getProperty("windyboy.cms095.flags", "0"));
+            adminOnly = Boolean.parseBoolean(ServerProperties.getProperty("windyboy.cms095.admin", "false"));
+            eventSM = new EventScriptManager(this, ServerProperties.getProperty("windyboy.cms095.events").split(","));
+            port = Short.parseShort(ServerProperties.getProperty("windyboy.cms095.net.port" + channel, String.valueOf(DEFAULT_PORT + channel)));
         } catch (Exception e) {
             throw new RuntimeException(e);
         }
-        ip = (ServerConstants.LOCALHOST ? ServerProperties.getProperty("配置.net.interface") : ServerConstants.IP) + ":" + port;
+        ip = (ServerConstants.LOCALHOST ? ServerProperties.getProperty("windyboy.cms095.net.interface") : ServerConstants.IP) + ":" + port;
         players = new PlayerStorage(channel);
         loadEvents();
         try {
@@ -233,7 +233,7 @@ public class ChannelServer {
 
     public final void reloadEvents() {
         eventSM.cancel();
-        eventSM = new EventScriptManager(this, ServerProperties.getProperty("配置.events").split(","));
+        eventSM = new EventScriptManager(this, ServerProperties.getProperty("windyboy.cms095.events").split(","));
         eventSM.init();
     }
 
@@ -256,7 +256,7 @@ public class ChannelServer {
     public static final void startChannel_Main() {
         serverStartTime = System.currentTimeMillis();
 
-        for (int i = 0; i < Integer.parseInt(ServerProperties.getProperty("配置.count", "0")); i++) {
+        for (int i = 0; i < Integer.parseInt(ServerProperties.getProperty("windyboy.cms095.count", "0")); i++) {
             newInstance(i + 1).run_startup_configurations();
         }
     }

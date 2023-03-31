@@ -15,7 +15,7 @@ public class CashShopServer {
     private static boolean finishedShutdown = false;
 
     public static final void run_startup_configurations() {
-        ip = ServerProperties.getProperty("配置.host") + ":" + PORT;
+        ip = ServerProperties.getProperty("windyboy.cms095.host") + ":" + PORT;
 
         players = new PlayerStorage(-10);
 

@@ -21,10 +21,7 @@ public class ServerProperties {
     }
 
     static {
-        String toLoad = "channel.properties";
-        loadProperties(toLoad);
-        toLoad = "world.properties";
-        loadProperties(toLoad);
+        loadProperties("world.properties");
 
     }
 

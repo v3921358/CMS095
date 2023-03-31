@@ -58,27 +58,27 @@ public class LoginServer {
     }
 
     public static final void run_startup_configurations() {
-        userLimit = ServerConstants.LOCALHOST ? 20 : Integer.parseInt(ServerProperties.getProperty("配置.userlimit"));
-        serverName = ServerProperties.getProperty("配置.serverName");
-        eventMessage = ServerProperties.getProperty("配置.eventMessage");
-        flag = Byte.parseByte(ServerProperties.getProperty("配置.flag"));
-        adminOnly = Boolean.parseBoolean(ServerProperties.getProperty("配置.admin", "false"));
-        logPackets = Boolean.parseBoolean(ServerProperties.getProperty("配置.logpackets", "false"));
-        maxCharacters = Integer.parseInt(ServerProperties.getProperty("配置.maxCharacters"));
-        renewPotentiaA = Integer.parseInt(ServerProperties.getProperty("配置.renewPotentiaA"));
-        renewPotentiaS = Integer.parseInt(ServerProperties.getProperty("配置.renewPotentiaS"));
-        renewPotentialsuperA = Integer.parseInt(ServerProperties.getProperty("配置.renewPotentialsuperA"));
-        renewPotentialsuperS = Integer.parseInt(ServerProperties.getProperty("配置.renewPotentialsuperS"));
-        renewPotentialsuper3 = Integer.parseInt(ServerProperties.getProperty("配置.renewPotentialsuper3"));
-        maxlevel = Short.parseShort(ServerProperties.getProperty("配置.maxlevel"));
-        kocmaxlevel = Short.parseShort(ServerProperties.getProperty("配置.kocmaxlevel"));
-        pddy = Integer.parseInt(ServerProperties.getProperty("配置.pddy"));
-        pdjb = Integer.parseInt(ServerProperties.getProperty("配置.pdjb"));
-        pdjy = Integer.parseInt(ServerProperties.getProperty("配置.pdjy"));
-        lxdy = Integer.parseInt(ServerProperties.getProperty("配置.lxdy"));
-        lxjb = Integer.parseInt(ServerProperties.getProperty("配置.lxjb"));
-        lxjy = Integer.parseInt(ServerProperties.getProperty("配置.lxjy"));
-        loginMessage = ServerProperties.getProperty("配置.loginMessage");
+        userLimit = ServerConstants.LOCALHOST ? 20 : Integer.parseInt(ServerProperties.getProperty("windyboy.cms095.userlimit"));
+        serverName = ServerProperties.getProperty("windyboy.cms095.serverName");
+        eventMessage = ServerProperties.getProperty("windyboy.cms095.eventMessage");
+        flag = Byte.parseByte(ServerProperties.getProperty("windyboy.cms095.flag"));
+        adminOnly = Boolean.parseBoolean(ServerProperties.getProperty("windyboy.cms095.admin", "false"));
+        logPackets = Boolean.parseBoolean(ServerProperties.getProperty("windyboy.cms095.logpackets", "false"));
+        maxCharacters = Integer.parseInt(ServerProperties.getProperty("windyboy.cms095.maxCharacters"));
+        renewPotentiaA = Integer.parseInt(ServerProperties.getProperty("windyboy.cms095.renewPotentiaA"));
+        renewPotentiaS = Integer.parseInt(ServerProperties.getProperty("windyboy.cms095.renewPotentiaS"));
+        renewPotentialsuperA = Integer.parseInt(ServerProperties.getProperty("windyboy.cms095.renewPotentialsuperA"));
+        renewPotentialsuperS = Integer.parseInt(ServerProperties.getProperty("windyboy.cms095.renewPotentialsuperS"));
+        renewPotentialsuper3 = Integer.parseInt(ServerProperties.getProperty("windyboy.cms095.renewPotentialsuper3"));
+        maxlevel = Short.parseShort(ServerProperties.getProperty("windyboy.cms095.maxlevel"));
+        kocmaxlevel = Short.parseShort(ServerProperties.getProperty("windyboy.cms095.kocmaxlevel"));
+        pddy = Integer.parseInt(ServerProperties.getProperty("windyboy.cms095.pddy"));
+        pdjb = Integer.parseInt(ServerProperties.getProperty("windyboy.cms095.pdjb"));
+        pdjy = Integer.parseInt(ServerProperties.getProperty("windyboy.cms095.pdjy"));
+        lxdy = Integer.parseInt(ServerProperties.getProperty("windyboy.cms095.lxdy"));
+        lxjb = Integer.parseInt(ServerProperties.getProperty("windyboy.cms095.lxjb"));
+        lxjy = Integer.parseInt(ServerProperties.getProperty("windyboy.cms095.lxjy"));
+        loginMessage = ServerProperties.getProperty("windyboy.cms095.loginMessage");
 
         try {
             acceptor = new ServerConnection(PORT, 0, -1, false);

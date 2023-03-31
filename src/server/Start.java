@@ -84,16 +84,16 @@ public class Start {
             System.out.println(ex);
         }
 
-        if (Boolean.parseBoolean(ServerProperties.getProperty("配置.admin")) || ServerConstants.Use_Localhost) {
+        if (Boolean.parseBoolean(ServerProperties.getProperty("windyboy.cms095.admin")) || ServerConstants.Use_Localhost) {
             ServerConstants.Use_Fixed_IV = false;
             System.out.println("[--- Admin Mode Active ---]");
         }
 
-        if (Boolean.parseBoolean(ServerProperties.getProperty("配置.logpackets"))) {
+        if (Boolean.parseBoolean(ServerProperties.getProperty("windyboy.cms095.logpackets"))) {
             System.out.println("[--- Logging Packets ---]");
         }
 
-        System.out.println("[" + ServerProperties.getProperty("配置.serverName") + "]");
+        System.out.println("[" + ServerProperties.getProperty("windyboy.cms095.serverName") + "]");
         System.out.println("[2022年虎年大吉 - 傻逼疯神]");//Maple Trade System is disable
         World.init();
         WorldTimer.getInstance().start();

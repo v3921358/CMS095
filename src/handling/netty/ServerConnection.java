@@ -40,7 +40,7 @@ public class ServerConnection {
         try {
             boot = new ServerBootstrap().group(bossGroup, workerGroup)
                     .channel(NioServerSocketChannel.class)
-                    .option(ChannelOption.SO_BACKLOG, ServerConstants.LOCALHOST ? 20 : Integer.parseInt(ServerProperties.getProperty("配置.userlimit")))
+                    .option(ChannelOption.SO_BACKLOG, ServerConstants.LOCALHOST ? 20 : Integer.parseInt(ServerProperties.getProperty("windyboy.cms095.userlimit")))
                     .childOption(ChannelOption.TCP_NODELAY, true)
                     .childOption(ChannelOption.SO_KEEPALIVE, true)
                     .childHandler(new ServerInitializer(world, channels, port, cs));
