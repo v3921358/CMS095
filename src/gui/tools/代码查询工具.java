@@ -17,7 +17,7 @@ import javax.swing.table.DefaultTableModel;
 import tools.SearchGenerator;
 /**
  *
- * @author 疯神
+ * @author 傻逼疯神
  */
 public class 代码查询工具 extends javax.swing.JFrame {
     /**

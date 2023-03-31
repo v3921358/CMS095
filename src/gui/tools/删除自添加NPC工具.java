@@ -18,7 +18,7 @@ import javax.swing.table.DefaultTableModel;
 import server.MapleItemInformationProvider;
 /**
  *
- * @author 疯神
+ * @author 傻逼疯神
  */
 public class 删除自添加NPC工具 extends javax.swing.JFrame {
     /**

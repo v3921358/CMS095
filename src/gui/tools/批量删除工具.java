@@ -20,7 +20,7 @@ import server.MapleItemInformationProvider;
 import server.Start;
 /**
  *
- * @author 疯神
+ * @author 傻逼疯神
  */
 public class 批量删除工具 extends javax.swing.JFrame {
 

@@ -24,7 +24,7 @@ import tools.FileoutputUtil;
 import static tools.FileoutputUtil.CurrentReadable_Date;
 /**
  *
- * @author 疯神
+ * @author 傻逼疯神
  */
 public class 卡密制作工具 extends javax.swing.JFrame {
     /**

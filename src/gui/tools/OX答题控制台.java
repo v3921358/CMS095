@@ -19,7 +19,7 @@ import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 /**
  *
- * @author 疯神
+ * @author 傻逼疯神
  */
 public class OX答题控制台 extends javax.swing.JFrame {
     /**

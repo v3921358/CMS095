@@ -75,7 +75,7 @@ import tools.Pair;
 import tools.packet.MaplePacketCreator;
 
 /**
- * @author 疯神
+ * @author 傻逼疯神
  */
 public class ZeroMS_UI extends javax.swing.JFrame {
     protected static Thread t;
@@ -1339,7 +1339,7 @@ public class ZeroMS_UI extends javax.swing.JFrame {
         output_packet_jTextPane.setEditable(false);
         output_packet_jTextPane.setBackground(new java.awt.Color(51, 0, 51));
         output_packet_jTextPane.setFont(new java.awt.Font("新宋体", 1, 14)); // NOI18N
-        output_packet_jTextPane.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        output_packet_jTextPane.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         output_packet_jTextPane.setFocusTraversalPolicyProvider(true);
         jScrollPane5.setViewportView(output_packet_jTextPane);
 
@@ -1359,7 +1359,7 @@ public class ZeroMS_UI extends javax.swing.JFrame {
         output_notice_jTextPane.setEditable(false);
         output_notice_jTextPane.setBackground(new java.awt.Color(51, 0, 51));
         output_notice_jTextPane.setForeground(new java.awt.Color(51, 255, 204));
-        output_notice_jTextPane.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        output_notice_jTextPane.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         output_notice_jTextPane.setFocusTraversalPolicyProvider(true);
         output_notice_jTextPane.setInheritsPopupMenu(true);
         output_notice_jTextPane.setSelectedTextColor(new java.awt.Color(51, 0, 51));
@@ -1381,7 +1381,7 @@ public class ZeroMS_UI extends javax.swing.JFrame {
         output_err_jTextPane.setEditable(false);
         output_err_jTextPane.setBackground(new java.awt.Color(51, 0, 51));
         output_err_jTextPane.setForeground(new java.awt.Color(255, 255, 255));
-        output_err_jTextPane.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        output_err_jTextPane.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         output_err_jTextPane.setInheritsPopupMenu(true);
         output_err_jTextPane.setSelectedTextColor(new java.awt.Color(51, 0, 51));
         jScrollPane6.setViewportView(output_err_jTextPane);
@@ -1401,7 +1401,7 @@ public class ZeroMS_UI extends javax.swing.JFrame {
 
         output_out_jTextPane.setBackground(new java.awt.Color(51, 0, 51));
         output_out_jTextPane.setForeground(new java.awt.Color(0, 204, 204));
-        output_out_jTextPane.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        output_out_jTextPane.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         output_out_jTextPane.setFocusCycleRoot(false);
         output_out_jTextPane.setFocusTraversalPolicyProvider(true);
         output_out_jTextPane.setInheritsPopupMenu(true);
@@ -1772,7 +1772,7 @@ public class ZeroMS_UI extends javax.swing.JFrame {
 
         jPanel21.setFont(new java.awt.Font("微软雅黑", 0, 18)); // NOI18N
 
-        jPanel49.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "系统设置", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("宋体", 0, 12), new java.awt.Color(0, 153, 0))); // NOI18N
+        jPanel49.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "系统设置", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("微軟正黑體", 0, 12), new java.awt.Color(0, 153, 0))); // NOI18N
 
         jLabel23.setText("IP地址");
 
@@ -2181,7 +2181,7 @@ public class ZeroMS_UI extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        jPanel16.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "数据库设置", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("宋体", 0, 12), new java.awt.Color(255, 153, 51))); // NOI18N
+        jPanel16.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "数据库设置", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("微軟正黑體", 0, 12), new java.awt.Color(255, 153, 51))); // NOI18N
 
         jLabel15.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel15.setText("用戶名");
@@ -2244,7 +2244,7 @@ public class ZeroMS_UI extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "日志输出", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("宋体", 0, 12), new java.awt.Color(153, 153, 255))); // NOI18N
+        jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "日志输出", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("微軟正黑體", 0, 12), new java.awt.Color(153, 153, 255))); // NOI18N
 
         logs_storage.setText("仓库日志");
 
@@ -2316,7 +2316,7 @@ public class ZeroMS_UI extends javax.swing.JFrame {
                 .addGap(0, 0, Short.MAX_VALUE))
         );
 
-        jPanel5.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "职业开放创建设置", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("宋体", 0, 12), new java.awt.Color(0, 153, 255))); // NOI18N
+        jPanel5.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "职业开放创建设置", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("微軟正黑體", 0, 12), new java.awt.Color(0, 153, 255))); // NOI18N
 
         adventurer.setText("冒险家");
         adventurer.setToolTipText("<html>\n<strong><font color=\"#FF0000\">功能说明</font></strong><br> \n<strong>用于控制游戏冒险家职业是否开启<br> <br> <br> ");
@@ -2359,7 +2359,7 @@ public class ZeroMS_UI extends javax.swing.JFrame {
                 .addGap(0, 0, 0))
         );
 
-        jPanel8.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "职业创建顺序界面", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("宋体", 0, 12), new java.awt.Color(0, 153, 153))); // NOI18N
+        jPanel8.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "职业创建顺序界面", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("微軟正黑體", 0, 12), new java.awt.Color(0, 153, 153))); // NOI18N
 
         物品叠加开关6.setSelected(true);
         物品叠加开关6.setText("仿官顺序界面");
@@ -2387,7 +2387,7 @@ public class ZeroMS_UI extends javax.swing.JFrame {
                 .addGap(0, 0, 0))
         );
 
-        jPanel14.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "切换游戏模式", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("宋体", 0, 12), new java.awt.Color(255, 51, 255))); // NOI18N
+        jPanel14.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "切换游戏模式", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("微軟正黑體", 0, 12), new java.awt.Color(255, 51, 255))); // NOI18N
 
         物品叠加开关8.setSelected(true);
         物品叠加开关8.setText("自由模式");
@@ -2415,7 +2415,7 @@ public class ZeroMS_UI extends javax.swing.JFrame {
                 .addGap(0, 0, Short.MAX_VALUE))
         );
 
-        jPanel60.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "全屏宠吸配置", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("宋体", 0, 12), new java.awt.Color(255, 51, 204))); // NOI18N
+        jPanel60.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "全屏宠吸配置", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("微軟正黑體", 0, 12), new java.awt.Color(255, 51, 204))); // NOI18N
 
         Fullscreenpetsuction.setText("全屏宠吸");
 
@@ -2502,7 +2502,7 @@ public class ZeroMS_UI extends javax.swing.JFrame {
                 .addGap(0, 0, 0))
         );
 
-        jPanel44.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "怪物掉落点卷", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("宋体", 0, 12), new java.awt.Color(0, 204, 204))); // NOI18N
+        jPanel44.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "怪物掉落点卷", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("微軟正黑體", 0, 12), new java.awt.Color(0, 204, 204))); // NOI18N
 
         a13.setFont(new java.awt.Font("宋体", 0, 14)); // NOI18N
         a13.setText("怪物掉落点卷数量");
@@ -2529,7 +2529,7 @@ public class ZeroMS_UI extends javax.swing.JFrame {
                             .addComponent(a14))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(jPanel44Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(Monsterdropoffset, javax.swing.GroupLayout.DEFAULT_SIZE, 39, Short.MAX_VALUE)
+                            .addComponent(Monsterdropoffset)
                             .addComponent(Monsterdroproll))))
                 .addContainerGap())
         );
@@ -2551,7 +2551,7 @@ public class ZeroMS_UI extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        jPanel79.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "技能检测&用于防挂", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("宋体", 0, 12), new java.awt.Color(255, 0, 0))); // NOI18N
+        jPanel79.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "技能检测&用于防挂", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("微軟正黑體", 0, 12), new java.awt.Color(255, 0, 0))); // NOI18N
 
         applAttackRange.setForeground(new java.awt.Color(255, 51, 255));
         applAttackRange.setText("技能范围检测");
@@ -2645,7 +2645,7 @@ public class ZeroMS_UI extends javax.swing.JFrame {
 
         jTabbedPane6.addTab("系统设置", new javax.swing.ImageIcon(getClass().getResource("/Image/101.png")), jPanel12); // NOI18N
 
-        jPanel52.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "游戏设置", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("宋体", 0, 12), new java.awt.Color(51, 204, 255))); // NOI18N
+        jPanel52.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "游戏设置", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("微軟正黑體", 0, 12), new java.awt.Color(51, 204, 255))); // NOI18N
 
         jLabel5.setText("经验倍数");
 
@@ -2966,7 +2966,7 @@ public class ZeroMS_UI extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        jPanel83.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "自定义地图刷怪设置[地图列表id( | 隔开)]", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("宋体", 0, 12), new java.awt.Color(153, 204, 0))); // NOI18N
+        jPanel83.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "自定义地图刷怪设置[地图列表id( | 隔开)]", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("微軟正黑體", 0, 12), new java.awt.Color(153, 204, 0))); // NOI18N
 
         jLabel88.setFont(new java.awt.Font("宋体", 0, 14)); // NOI18N
         jLabel88.setText("自定义地图刷怪倍数:");
@@ -3040,7 +3040,7 @@ public class ZeroMS_UI extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        jPanel3.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "分段式经验倍率", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("宋体", 0, 12), new java.awt.Color(51, 255, 153))); // NOI18N
+        jPanel3.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "分段式经验倍率", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("微軟正黑體", 0, 12), new java.awt.Color(51, 255, 153))); // NOI18N
 
         jLabel51.setText("010-069级");
 
@@ -3184,7 +3184,7 @@ public class ZeroMS_UI extends javax.swing.JFrame {
                 .addGap(0, 0, 0))
         );
 
-        jPanel78.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "双倍爆率频道事件管理", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("宋体", 0, 12), new java.awt.Color(0, 153, 153))); // NOI18N
+        jPanel78.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "双倍爆率频道事件管理", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("微軟正黑體", 0, 12), new java.awt.Color(0, 153, 153))); // NOI18N
 
         jLabel265.setFont(new java.awt.Font("宋体", 0, 14)); // NOI18N
         jLabel265.setText("双倍爆率频道/默认2频道");
@@ -3211,7 +3211,7 @@ public class ZeroMS_UI extends javax.swing.JFrame {
                     .addComponent(jLabel265, javax.swing.GroupLayout.PREFERRED_SIZE, 159, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel78Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(Channelnumber, javax.swing.GroupLayout.DEFAULT_SIZE, 63, Short.MAX_VALUE)
+                    .addComponent(Channelnumber)
                     .addComponent(Doubleexplosionchannel))
                 .addGap(15, 15, 15)
                 .addComponent(Doubleburstchannel)
@@ -3261,7 +3261,7 @@ public class ZeroMS_UI extends javax.swing.JFrame {
 
         jPanel64.setBorder(javax.swing.BorderFactory.createTitledBorder("进阶设置"));
 
-        jPanel42.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "PvP功能", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("宋体", 0, 12), new java.awt.Color(102, 102, 255))); // NOI18N
+        jPanel42.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "PvP功能", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("微軟正黑體", 0, 12), new java.awt.Color(102, 102, 255))); // NOI18N
 
         jLabel48.setText("个人PVP地图");
 
@@ -3301,7 +3301,7 @@ public class ZeroMS_UI extends javax.swing.JFrame {
                 .addGap(0, 0, 0))
         );
 
-        jPanel63.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "经验加成设置& 1/1 不消弱 1/2 消弱2分之1 ", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("宋体", 0, 12), new java.awt.Color(204, 0, 255))); // NOI18N
+        jPanel63.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "经验加成设置& 1/1 不消弱 1/2 消弱2分之1 ", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("微軟正黑體", 0, 12), new java.awt.Color(204, 0, 255))); // NOI18N
 
         jLabel28.setText("结婚经验加成 + %");
 
@@ -3366,7 +3366,7 @@ public class ZeroMS_UI extends javax.swing.JFrame {
 
         jPanel66.setBorder(javax.swing.BorderFactory.createTitledBorder("特殊功能"));
 
-        jPanel72.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "破功功能", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("宋体", 0, 12), new java.awt.Color(255, 0, 0))); // NOI18N
+        jPanel72.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "破功功能", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("微軟正黑體", 0, 12), new java.awt.Color(255, 0, 0))); // NOI18N
 
         飞侠攻击力.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -4475,7 +4475,7 @@ public class ZeroMS_UI extends javax.swing.JFrame {
 
         jTabbedPane6.addTab("挂机功能", new javax.swing.ImageIcon(getClass().getResource("/Image/99.png")), jPanel4); // NOI18N
 
-        jPanel40.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "配置保存", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("宋体", 0, 12), new java.awt.Color(0, 204, 102))); // NOI18N
+        jPanel40.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "配置保存", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("微軟正黑體", 0, 12), new java.awt.Color(0, 204, 102))); // NOI18N
 
         jButton16.setText("放弃修改");
         jButton16.addActionListener(new java.awt.event.ActionListener() {
@@ -4955,7 +4955,7 @@ public class ZeroMS_UI extends javax.swing.JFrame {
         角色总数标签.setForeground(new java.awt.Color(255, 51, 51));
         角色总数标签.setText("读取中");
 
-        jPanel24.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "*修改角色数据需要下线修改", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("宋体", 0, 12), new java.awt.Color(255, 0, 204))); // NOI18N
+        jPanel24.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "*修改角色数据需要下线修改", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("微軟正黑體", 0, 12), new java.awt.Color(255, 0, 204))); // NOI18N
 
         角色11.setEditable(false);
 
@@ -5028,7 +5028,7 @@ public class ZeroMS_UI extends javax.swing.JFrame {
                 .addComponent(jButton2)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jButton3)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(14, Short.MAX_VALUE))
         );
         jPanel46Layout.setVerticalGroup(
             jPanel46Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -5072,7 +5072,7 @@ public class ZeroMS_UI extends javax.swing.JFrame {
         jPanel47Layout.setHorizontalGroup(
             jPanel47Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel47Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap(14, Short.MAX_VALUE)
                 .addGroup(jPanel47Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(jButton4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jButton6))
@@ -5248,11 +5248,11 @@ public class ZeroMS_UI extends javax.swing.JFrame {
                         .addGap(35, 35, 35)))
                 .addGroup(jPanel24Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel24Layout.createSequentialGroup()
-                        .addComponent(jPanel47, javax.swing.GroupLayout.PREFERRED_SIZE, 192, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jPanel47, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(0, 0, 0)
                         .addComponent(jPanel50, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addGroup(jPanel24Layout.createSequentialGroup()
-                        .addComponent(jPanel46, javax.swing.GroupLayout.PREFERRED_SIZE, 192, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jPanel46, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(0, 0, 0)
                         .addComponent(jPanel48, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
         );
@@ -5458,7 +5458,7 @@ public class ZeroMS_UI extends javax.swing.JFrame {
 
         jTabbedPane1.addTab("修改在线角色", jPanel53);
 
-        jPanel33.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "功能说明:新手不要乱用！", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("宋体", 0, 12), new java.awt.Color(255, 0, 0))); // NOI18N
+        jPanel33.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "功能说明:新手不要乱用！", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("微軟正黑體", 0, 12), new java.awt.Color(255, 0, 0))); // NOI18N
 
         jTextArea5.setBackground(new java.awt.Color(0, 204, 0));
         jTextArea5.setColumns(20);
@@ -7331,7 +7331,7 @@ public class ZeroMS_UI extends javax.swing.JFrame {
 
         jTabbedPane.addTab("更新日志", new javax.swing.ImageIcon(getClass().getResource("/Image/3994730.png")), jPanel37); // NOI18N
 
-        jLabel7.setText("Code write NetBeans IDE.This ServerManager that made by ZeroMS");
+        jLabel7.setText("傻逼傻逼疯神");
 
         ActiveThread.setText("游戏线程:0");
 
@@ -7356,9 +7356,9 @@ public class ZeroMS_UI extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGap(139, 139, 139)
                 .addComponent(jLabel7)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(内存使用)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(内存条, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -7375,14 +7375,14 @@ public class ZeroMS_UI extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addComponent(jTabbedPane, javax.swing.GroupLayout.PREFERRED_SIZE, 656, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel7)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                        .addComponent(RunTime, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(RunStats, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(ActiveThread, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(内存条, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(内存使用, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(RunTime, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(RunStats, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(ActiveThread, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(内存条, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(内存使用, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jLabel7)))
                 .addContainerGap())
         );
 

@@ -22,7 +22,7 @@ import server.MapleItemInformationProvider;
 import server.Start;
 /**
  *
- * @author 疯神
+ * @author 傻逼疯神
  */
 public class 广播系统 extends javax.swing.JFrame {
     /**

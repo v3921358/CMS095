@@ -10,7 +10,7 @@ import javax.swing.JOptionPane;
 import tools.HexTool;
 /**
  *
- * @author 疯神
+ * @author 傻逼疯神
  */
 public class 基址计算工具 extends javax.swing.JFrame {
     /**

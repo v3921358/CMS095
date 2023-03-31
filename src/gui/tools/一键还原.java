@@ -19,7 +19,7 @@ import javax.swing.LookAndFeel;
 import javax.swing.UIManager;
 /**
  *
- * @author 疯神
+ * @author 傻逼疯神
  */
 public class 一键还原 extends javax.swing.JFrame {
     /**

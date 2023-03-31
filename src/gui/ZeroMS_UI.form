@@ -31,9 +31,9 @@
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="1" attributes="0">
-              <EmptySpace min="33" max="32767" attributes="0"/>
+              <EmptySpace min="-2" pref="139" max="-2" attributes="0"/>
               <Component id="jLabel7" min="-2" max="-2" attributes="0"/>
-              <EmptySpace max="-2" attributes="0"/>
+              <EmptySpace max="32767" attributes="0"/>
               <Component id="内存使用" min="-2" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
               <Component id="内存条" min="-2" pref="150" max="-2" attributes="0"/>
@@ -52,14 +52,14 @@
           <Group type="102" alignment="0" attributes="0">
               <Component id="jTabbedPane" min="-2" pref="656" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="jLabel7" min="-2" max="-2" attributes="0"/>
-                  <Group type="103" alignment="0" groupAlignment="0" max="-2" attributes="0">
-                      <Component id="RunTime" max="32767" attributes="0"/>
-                      <Component id="RunStats" alignment="1" max="32767" attributes="0"/>
-                      <Component id="ActiveThread" alignment="1" max="32767" attributes="0"/>
-                      <Component id="内存条" alignment="0" max="32767" attributes="0"/>
-                      <Component id="内存使用" min="-2" pref="28" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                  <Component id="RunTime" max="32767" attributes="0"/>
+                  <Component id="RunStats" alignment="1" max="32767" attributes="0"/>
+                  <Component id="ActiveThread" alignment="1" max="32767" attributes="0"/>
+                  <Component id="内存条" alignment="0" max="32767" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="内存使用" alignment="3" min="-2" pref="28" max="-2" attributes="0"/>
+                      <Component id="jLabel7" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
@@ -72,7 +72,7 @@
       <Properties>
         <Property name="tabPlacement" type="int" value="2"/>
         <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
-          <Color id="&#x9ed8;&#x8ba4;&#x5149;&#x6807;"/>
+          <Color id="Default Cursor"/>
         </Property>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="&#x5b8b;&#x4f53;" size="18" style="1"/>
@@ -452,7 +452,7 @@
                               <Font name="&#x65b0;&#x5b8b;&#x4f53;" size="14" style="1"/>
                             </Property>
                             <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
-                              <Color id="&#x6587;&#x672c;&#x5149;&#x6807;"/>
+                              <Color id="Default Cursor"/>
                             </Property>
                             <Property name="focusTraversalPolicyProvider" type="boolean" value="true"/>
                           </Properties>
@@ -500,7 +500,7 @@
                               <Color blue="cc" green="ff" red="33" type="rgb"/>
                             </Property>
                             <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
-                              <Color id="&#x6587;&#x672c;&#x5149;&#x6807;"/>
+                              <Color id="Default Cursor"/>
                             </Property>
                             <Property name="focusTraversalPolicyProvider" type="boolean" value="true"/>
                             <Property name="inheritsPopupMenu" type="boolean" value="true"/>
@@ -552,7 +552,7 @@
                               <Color blue="ff" green="ff" red="ff" type="rgb"/>
                             </Property>
                             <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
-                              <Color id="&#x6587;&#x672c;&#x5149;&#x6807;"/>
+                              <Color id="Default Cursor"/>
                             </Property>
                             <Property name="inheritsPopupMenu" type="boolean" value="true"/>
                             <Property name="selectedTextColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
@@ -602,7 +602,7 @@
                               <Color blue="cc" green="cc" red="0" type="rgb"/>
                             </Property>
                             <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
-                              <Color id="&#x6587;&#x672c;&#x5149;&#x6807;"/>
+                              <Color id="Default Cursor"/>
                             </Property>
                             <Property name="focusCycleRoot" type="boolean" value="false"/>
                             <Property name="focusTraversalPolicyProvider" type="boolean" value="true"/>
@@ -792,7 +792,7 @@
                       </TableColumnModel>
                     </Property>
                     <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
-                      <Color id="&#x9ed8;&#x8ba4;&#x5149;&#x6807;"/>
+                      <Color id="Default Cursor"/>
                     </Property>
                     <Property name="gridColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="e3" green="e3" id="Button.light" palette="3" red="e3" type="palette"/>
@@ -2198,7 +2198,7 @@
                                           </Group>
                                           <EmptySpace max="-2" attributes="0"/>
                                           <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                              <Component id="Monsterdropoffset" pref="39" max="32767" attributes="0"/>
+                                              <Component id="Monsterdropoffset" max="32767" attributes="0"/>
                                               <Component id="Monsterdroproll" max="32767" attributes="0"/>
                                           </Group>
                                       </Group>
@@ -3337,7 +3337,7 @@
                                   </Group>
                                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                      <Component id="Channelnumber" pref="63" max="32767" attributes="0"/>
+                                      <Component id="Channelnumber" max="32767" attributes="0"/>
                                       <Component id="Doubleexplosionchannel" max="32767" attributes="0"/>
                                   </Group>
                                   <EmptySpace min="-2" pref="15" max="-2" attributes="0"/>
@@ -6362,12 +6362,12 @@
                                           </Group>
                                           <Group type="103" groupAlignment="0" attributes="0">
                                               <Group type="102" alignment="0" attributes="0">
-                                                  <Component id="jPanel47" min="-2" pref="192" max="-2" attributes="0"/>
+                                                  <Component id="jPanel47" min="-2" max="-2" attributes="0"/>
                                                   <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
                                                   <Component id="jPanel50" max="32767" attributes="0"/>
                                               </Group>
                                               <Group type="102" alignment="0" attributes="0">
-                                                  <Component id="jPanel46" min="-2" pref="192" max="-2" attributes="0"/>
+                                                  <Component id="jPanel46" min="-2" max="-2" attributes="0"/>
                                                   <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
                                                   <Component id="jPanel48" max="32767" attributes="0"/>
                                               </Group>
@@ -6627,7 +6627,7 @@
                                               <Component id="jButton2" min="-2" max="-2" attributes="0"/>
                                               <EmptySpace max="-2" attributes="0"/>
                                               <Component id="jButton3" min="-2" max="-2" attributes="0"/>
-                                              <EmptySpace max="32767" attributes="0"/>
+                                              <EmptySpace pref="14" max="32767" attributes="0"/>
                                           </Group>
                                       </Group>
                                     </DimensionLayout>
@@ -6672,7 +6672,7 @@
                                     <DimensionLayout dim="0">
                                       <Group type="103" groupAlignment="0" attributes="0">
                                           <Group type="102" alignment="1" attributes="0">
-                                              <EmptySpace max="32767" attributes="0"/>
+                                              <EmptySpace pref="14" max="32767" attributes="0"/>
                                               <Group type="103" groupAlignment="0" max="-2" attributes="0">
                                                   <Component id="jButton4" max="32767" attributes="0"/>
                                                   <Component id="jButton6" min="-2" max="-2" attributes="0"/>
@@ -10076,7 +10076,7 @@
     </Container>
     <Component class="javax.swing.JLabel" name="jLabel7">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Code write NetBeans IDE.This ServerManager that made by ZeroMS"/>
+        <Property name="text" type="java.lang.String" value="&#x50bb;&#x903c;&#x75af;&#x795e;"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="ActiveThread">

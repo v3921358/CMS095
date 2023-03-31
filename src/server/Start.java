@@ -94,7 +94,7 @@ public class Start {
         }
 
         System.out.println("[" + ServerProperties.getProperty("配置.serverName") + "]");
-        System.out.println("[2022年虎年大吉 - QQ327321366]");//Maple Trade System is disable
+        System.out.println("[2022年虎年大吉 - 傻逼疯神]");//Maple Trade System is disable
         World.init();
         WorldTimer.getInstance().start();
         EtcTimer.getInstance().start();

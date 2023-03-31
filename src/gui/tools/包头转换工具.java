@@ -16,7 +16,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 /**
  *
- * @author 疯神
+ * @author 傻逼疯神
  */
 public class 包头转换工具 extends javax.swing.JFrame implements GUIWindow {
     /**

@@ -21,7 +21,7 @@ import server.MapleItemInformationProvider;
 import server.Start;
 /**
  *
- * @author 疯神
+ * @author 傻逼疯神
  */
 public class 游戏家族控制台 extends javax.swing.JFrame {
 
