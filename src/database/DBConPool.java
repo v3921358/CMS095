@@ -26,9 +26,9 @@ public class DBConPool {
     }
 
     public static void InitDB() {
-        dbName = ServerProperties.getProperty("windyboy.cms095.name", dbName);
-        dbUser = ServerProperties.getProperty("windyboy.cms095.user", dbUser);
-        dbPass = ServerProperties.getProperty("windyboy.cms095.password", dbPass);
+        dbName = ServerProperties.getProperty("windyboy.cms095.database.name", dbName);
+        dbUser = ServerProperties.getProperty("windyboy.cms095.database.user", dbUser);
+        dbPass = ServerProperties.getProperty("windyboy.cms095.database.password", dbPass);
     }
 
     private static class InstanceHolder {
