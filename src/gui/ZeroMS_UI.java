@@ -10104,6 +10104,7 @@ public class ZeroMS_UI extends javax.swing.JFrame {
             Connection con;
             String account = 输入0.getText();
             String password = 输入1.getText();
+            String qq = 输入2.getText();
 
             if (password.length() > 10) {
                 JOptionPane.showMessageDialog(null, "[信息]:注册失败，密码过长");
@@ -10120,9 +10121,10 @@ public class ZeroMS_UI extends javax.swing.JFrame {
                 return;
             }
             try {
-                PreparedStatement ps = con.prepareStatement("INSERT INTO accounts (name, password) VALUES (?,?)");
+                PreparedStatement ps = con.prepareStatement("INSERT INTO accounts (name, password, QQ) VALUES (?, ?, ?)");
                 ps.setString(1, account);
                 ps.setString(2, LoginCrypto.hexSha1(password));
+                ps.setString(3, qq);
                 ps.executeUpdate();
             //刷新账号界面按钮
             ((DefaultTableModel) accountstable.getModel()).getDataVector().clear();
