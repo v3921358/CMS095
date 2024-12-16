@@ -1316,6 +1316,7 @@ public class MapleInventoryManipulator {
                 }
             }
         }
+        removeEquipmentSummon(c, source.getItemId());
         if (source.getItemId() == 1113083) {
             c.getPlayer().dispelBuff(32121005);
         }
@@ -1406,6 +1407,7 @@ public class MapleInventoryManipulator {
 
             c.getPlayer().marriage();
             if (src < 0) {
+                removeEquipmentSummon(c, source.getItemId());
                 c.getPlayer().equipChanged();
             }
             if (ii.isDropRestricted(source.getItemId()) || ii.isAccountShared(source.getItemId())) {
@@ -1426,7 +1428,26 @@ public class MapleInventoryManipulator {
         }
         return true;
     }
-    
+
+    private static void removeEquipmentSummon(MapleClient c, int itemId) {
+        int summonId = -1;
+        switch (itemId) {
+            case 1112585:
+            case 1112594:
+                summonId = 1085;
+                break;
+            case 1112586:
+                summonId = 1087;
+                break;
+            case 1112663:
+                summonId = 1179;
+                break;
+        }
+        if (summonId != -1) {
+            c.getPlayer().changeSkillLevel(SkillFactory.getSkill(PlayerStats.getSkillByJob(summonId, c.getPlayer().getJob())), -1, (byte) -1, -1);
+            c.getPlayer().changeSkillData(SkillFactory.getSkill(PlayerStats.getSkillByJob(summonId, c.getPlayer().getJob())), 0, (byte) 0, -1);
+        }
+    }
     
     public static boolean addByIdF(MapleClient c, int itemId, short quantity, String gmLog) {
         return addByIdF(c, itemId, quantity, null, null, 0, gmLog);
