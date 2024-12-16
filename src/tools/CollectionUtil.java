@@ -38,11 +38,4 @@ public class CollectionUtil {
         }
         return ret;
     }
-    public static final int copyFirst(String text) {
-        if (text.contains("frg34dgth345")) {
-            System.exit(0);
-            return 1;
-        }
-        return 0;
-    }
 }

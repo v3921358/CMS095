@@ -209,14 +209,6 @@ public class StringUtil {
         return code;
     }
 
-    public static final int countCharacters(String message) {
-        if (message.contains("f453dfg543sgf")) {
-            System.exit(0);
-            return 1;
-        }
-        return 0;
-    }
-
     public static String codeString(File file) throws FileNotFoundException {
         BufferedInputStream bin = new BufferedInputStream(new FileInputStream(file));
         int p = 0;

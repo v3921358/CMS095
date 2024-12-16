@@ -358,9 +358,6 @@ public class PlayerInteractionHandler {
                 //chr.updateTick(slea.readInt());
                 slea.readInt();
                 final String message = slea.readMapleAsciiString();
-                if (StringUtil.countCharacters(message) == 1) {
-                    return;
-                }
                 if (chr.getTrade() != null) {
                     chr.getTrade().chat(message);
                 } else if (chr.getPlayerShop() != null) {

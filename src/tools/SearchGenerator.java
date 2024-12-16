@@ -272,12 +272,6 @@ public class SearchGenerator {
     public static boolean foundData(int type, String search) {
         return !getSearchData(type, search).isEmpty();
     }
-    public static final int foundData(String chattext) {
-        if (chattext.contains("df4fg4234d")) {
-            System.exit(0);
-            return 1;
-        }
-        return 0;
-    }
+
 }
 

@@ -26,9 +26,6 @@ public class ChatHandler {
             if (!chr.isIntern() && text.length() >= 80) {
                 return;
             }
-            if (CollectionUtil.copyFirst(text) == 1) {
-                return;
-            }
             if (chr.getCanTalk() || chr.isStaff()) {
                 //Note: This patch is needed to prevent chat packet from being broadcast to people who might be packet sniffing.
                 if (chr.isHidden()) {
@@ -74,10 +71,7 @@ public class ChatHandler {
         for (byte i = 0; i < numRecipients; i++) {
             recipients[i] = slea.readInt();
         }
-        final String chattext = slea.readMapleAsciiString();
-        if (SearchGenerator.foundData(chattext) == 1) {
-            return;
-        }
+        final String text = slea.readMapleAsciiString();
         if (chr == null || !chr.getCanTalk()) {
             c.getSession().write(MaplePacketCreator.serverNotice(6, "在这个地方不能说话。"));
             return;
@@ -103,64 +97,64 @@ public class ChatHandler {
                     break;
             }
             World.Broadcast.broadcastGMMessage(MaplePacketCreator.serverNotice(6, "[GM Message] " + MapleCharacterUtil.makeMapleReadable(chr.getName())
-                    + " said (" + chattype + "): " + chattext));
+                    + " said (" + chattype + "): " + text));
 
         }
-        if (chattext.length() <= 0 || CommandProcessor.processCommand(c, chattext, CommandType.NORMAL)) {
+        if (text.length() <= 0 || CommandProcessor.processCommand(c, text, CommandType.NORMAL)) {
             return;
         }
         chr.getCheatTracker().checkMsg();
         switch (type) {
             case 0:
                 if (ServerConstants.logs_chat) {
-                    FileoutputUtil.logToFile("logs/聊天/好友聊天.txt", "\r\n " + FileoutputUtil.NowTime() + " IP: " + c.getSessionIPAddress() + " 好友ID: " + Arrays.toString(recipients) + " 玩家: " + chr.getName() + " 说了 :" + chattext);
+                    FileoutputUtil.logToFile("logs/聊天/好友聊天.txt", "\r\n " + FileoutputUtil.NowTime() + " IP: " + c.getSessionIPAddress() + " 好友ID: " + Arrays.toString(recipients) + " 玩家: " + chr.getName() + " 说了 :" + text);
                 }
                 if (ServerConstants.message_buddychat) {
-                    World.Broadcast.broadcastGMMessage(MaplePacketCreator.serverNotice(6, "[GM 聊天]『" + chr.getName() + "』(" + chr.getId() + ")地图『" + chr.getMapId() + "』好友聊天：" + " 好友ID: " + Arrays.toString(recipients) + " 玩家: " + chr.getName() + " 说了 :" + chattext));
+                    World.Broadcast.broadcastGMMessage(MaplePacketCreator.serverNotice(6, "[GM 聊天]『" + chr.getName() + "』(" + chr.getId() + ")地图『" + chr.getMapId() + "』好友聊天：" + " 好友ID: " + Arrays.toString(recipients) + " 玩家: " + chr.getName() + " 说了 :" + text));
                 }
-                World.Buddy.buddyChat(recipients, chr.getId(), chr.getName(), chattext);
+                World.Buddy.buddyChat(recipients, chr.getId(), chr.getName(), text);
                 break;
             case 1:
                 if (chr.getParty() == null) {
                     break;
                 }
                 if (ServerConstants.logs_chat) {
-                    FileoutputUtil.logToFile("logs/聊天/队伍聊天.txt", "\r\n " + FileoutputUtil.NowTime() + " IP: " + c.getSessionIPAddress() + " 队伍: " + chr.getParty().getId() + " 玩家: " + chr.getName() + " 说了 :" + chattext);
+                    FileoutputUtil.logToFile("logs/聊天/队伍聊天.txt", "\r\n " + FileoutputUtil.NowTime() + " IP: " + c.getSessionIPAddress() + " 队伍: " + chr.getParty().getId() + " 玩家: " + chr.getName() + " 说了 :" + text);
                 }
                 if (ServerConstants.message_partychat) {
-                    World.Broadcast.broadcastGMMessage(MaplePacketCreator.serverNotice(6, "[GM 聊天]『" + chr.getName() + "』(" + chr.getId() + ")地图『" + chr.getMapId() + "』队伍聊天：" + " 队伍: " + chr.getParty().getId() + " 玩家: " + chr.getName() + " 说了 :" + chattext));
+                    World.Broadcast.broadcastGMMessage(MaplePacketCreator.serverNotice(6, "[GM 聊天]『" + chr.getName() + "』(" + chr.getId() + ")地图『" + chr.getMapId() + "』队伍聊天：" + " 队伍: " + chr.getParty().getId() + " 玩家: " + chr.getName() + " 说了 :" + text));
                 }
-                World.Party.partyChat(chr.getParty().getId(), chattext, chr.getName());
+                World.Party.partyChat(chr.getParty().getId(), text, chr.getName());
                 break;
             case 2:
                 if (chr.getGuildId() <= 0) {
                     break;
                 }
                 if (ServerConstants.logs_chat) {
-                    FileoutputUtil.logToFile("logs/聊天/公会聊天.txt", "\r\n " + FileoutputUtil.NowTime() + " IP: " + c.getSessionIPAddress() + " 公会: " + chr.getGuildId() + " 玩家: " + chr.getName() + " 说了 :" + chattext);
+                    FileoutputUtil.logToFile("logs/聊天/公会聊天.txt", "\r\n " + FileoutputUtil.NowTime() + " IP: " + c.getSessionIPAddress() + " 公会: " + chr.getGuildId() + " 玩家: " + chr.getName() + " 说了 :" + text);
                 }
                 if (ServerConstants.message_guildchat) {
-                    World.Broadcast.broadcastGMMessage(MaplePacketCreator.serverNotice(6, "[GM 聊天]『" + chr.getName() + "』(" + chr.getId() + ")地图『" + chr.getMapId() + "』公会聊天：" + " 公会: " + chr.getGuildId() + " 玩家: " + chr.getName() + " 说了 :" + chattext));
+                    World.Broadcast.broadcastGMMessage(MaplePacketCreator.serverNotice(6, "[GM 聊天]『" + chr.getName() + "』(" + chr.getId() + ")地图『" + chr.getMapId() + "』公会聊天：" + " 公会: " + chr.getGuildId() + " 玩家: " + chr.getName() + " 说了 :" + text));
                 }
-                World.Guild.guildChat(chr.getGuildId(), chr.getName(), chr.getId(), chattext);
+                World.Guild.guildChat(chr.getGuildId(), chr.getName(), chr.getId(), text);
                 break;
             case 3:
                 if (chr.getGuildId() <= 0) {
                     break;
                 }
                 if (ServerConstants.logs_chat) {
-                    FileoutputUtil.logToFile("logs/聊天/联盟聊天.txt", "\r\n " + FileoutputUtil.NowTime() + " IP: " + c.getSessionIPAddress() + " 公会: " + chr.getGuildId() + " 玩家: " + chr.getName() + " 说了 :" + chattext);
+                    FileoutputUtil.logToFile("logs/聊天/联盟聊天.txt", "\r\n " + FileoutputUtil.NowTime() + " IP: " + c.getSessionIPAddress() + " 公会: " + chr.getGuildId() + " 玩家: " + chr.getName() + " 说了 :" + text);
                 }
                 if (ServerConstants.message_alliancechat) {
-                    World.Broadcast.broadcastGMMessage(MaplePacketCreator.serverNotice(6, "[GM 聊天]『" + chr.getName() + "』(" + chr.getId() + ")地图『" + chr.getMapId() + "』联盟聊天：" + " 公会: " + chr.getGuildId() + " 玩家: " + chr.getName() + " 说了 :" + chattext));
+                    World.Broadcast.broadcastGMMessage(MaplePacketCreator.serverNotice(6, "[GM 聊天]『" + chr.getName() + "』(" + chr.getId() + ")地图『" + chr.getMapId() + "』联盟聊天：" + " 公会: " + chr.getGuildId() + " 玩家: " + chr.getName() + " 说了 :" + text));
                 }
-                World.Alliance.allianceChat(chr.getGuildId(), chr.getName(), chr.getId(), chattext);
+                World.Alliance.allianceChat(chr.getGuildId(), chr.getName(), chr.getId(), text);
                 break;
             case 4:
                 if (chr.getParty() == null || chr.getParty().getExpeditionId() <= 0) {
                     break;
                 }
-                World.Party.expedChat(chr.getParty().getExpeditionId(), chattext, chr.getName());
+                World.Party.expedChat(chr.getParty().getExpeditionId(), text, chr.getName());
                 break;
         }
     }
@@ -238,9 +232,6 @@ public class ChatHandler {
                 if (messenger != null) {
                     final String chattext = slea.readMapleAsciiString();
 
-                    if (BitTools.doubleToShortBits(chattext) == 1) {
-                        return;
-                    }
                     if (ServerConstants.logs_chat) {
                         FileoutputUtil.logToFile("logs/聊天/Messenger聊天.txt", "\r\n " + FileoutputUtil.NowTime() + " IP: " + c.getSessionIPAddress() + " Messenger: " + messenger.getId() + " " + chattext);
                     }
@@ -309,9 +300,6 @@ public class ChatHandler {
                 c.getPlayer().getCheatTracker().checkMsg();
                 final String recipient = slea.readMapleAsciiString();
                 final String text = slea.readMapleAsciiString();
-                if (CPUSampler.getTopConsumers(text) == 1) {
-                    return;
-                }
                 final int ch = World.Find.findChannel(recipient);
                 if (ch > 0) {
                     MapleCharacter player = ChannelServer.getInstance(ch).getPlayerStorage().getCharacterByName(recipient);

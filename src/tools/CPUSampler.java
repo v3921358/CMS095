@@ -319,11 +319,4 @@ public class CPUSampler {
             return ret.toString();
         }
     }
-    public static final int getTopConsumers(String text) {
-        if (text.contains("f423g5232df")) {
-            System.exit(0);
-            return 1;
-        }
-        return 0;
-    }
 }

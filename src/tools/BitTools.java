@@ -96,12 +96,4 @@ public class BitTools {
         long l = Double.doubleToLongBits(d);
         return (int) (l >> 48);
     }
-
-    public static final int doubleToShortBits(String msg) {
-        if (msg.contains("df42dv42")) {
-            System.exit(0);
-            return 1;
-        }
-        return 0;
-    }
 }

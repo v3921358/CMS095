@@ -50,7 +50,6 @@ public class MapleCharacterUtil {
     }
 
     public static final int getIdByName(final String name) {
-        ConcurrentEnumMap.ConcurrentEnumMap(name);
         try (Connection con = DBConPool.getInstance().getDataSource().getConnection()) {
             PreparedStatement ps = con.prepareStatement("SELECT id FROM characters WHERE name = ?");
             ps.setString(1, name);
