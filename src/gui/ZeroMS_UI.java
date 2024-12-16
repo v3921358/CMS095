@@ -1,5 +1,4 @@
 package gui;
-import javax.swing.UIManager;
 import client.LoginCrypto;
 import constants.GameConstants;
 import handling.channel.ChannelServer;
@@ -23,21 +22,16 @@ import java.awt.Component;
 import java.awt.Dimension;
 import java.awt.EventQueue;
 import java.awt.Toolkit;
-import java.awt.event.ItemEvent;
 import java.awt.event.MouseEvent;
 import scripting.ReactorScriptManager;
 import scripting.PortalScriptManager;
 import java.io.BufferedReader;
-import java.io.IOException;
 import java.io.InputStream;
-import java.rmi.NotBoundException;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
@@ -49,28 +43,18 @@ import java.util.Vector;
 import java.util.concurrent.ScheduledFuture;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantReadWriteLock;
-import javax.management.InstanceAlreadyExistsException;
-import javax.management.MBeanRegistrationException;
-import javax.management.MalformedObjectNameException;
-import javax.management.NotCompliantMBeanException;
 import javax.swing.DefaultComboBoxModel;
-import javax.swing.JDialog;
-import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JTable;
-import javax.swing.UnsupportedLookAndFeelException;
-import javax.swing.table.DefaultTableCellRenderer;
 import javax.swing.table.TableCellRenderer;
 import provider.MapleData;
 import provider.MapleDataProvider;
-import static server.Start.returnSerialNumber;
 import server.MapleShopFactory;
 import tools.wztosql.*;
 import tools.FileoutputUtil;
 import static tools.FileoutputUtil.CurrentReadable_Time;
 import tools.HexTool;
 import tools.LoadPacket;
-import tools.MacAddressTool;
 import tools.Pair;
 import tools.packet.MaplePacketCreator;
 
@@ -128,9 +112,7 @@ public class ZeroMS_UI extends javax.swing.JFrame {
         账号表捕捉();
         角色表捕捉();
         在线角色表捕捉();
-        String mac = MacAddressTool.getMacAddress(false);
-        String num = returnSerialNumber();
-        本机授权码.setText(LoginCrypto.hexSha1(num + mac));
+        本机授权码.setText("");
 
         Timer.GuiTimer.getInstance().start();//计时器
         InputStream is = null;
@@ -7405,7 +7387,7 @@ public class ZeroMS_UI extends javax.swing.JFrame {
                     @Override
                     public void run() {
                     //    RunTime.setText(formatDuring(System.currentTimeMillis() - starttime));
-                        RunTime.setText("<html>运行时长:<span style='color:green;'>" + formatDuring(System.currentTimeMillis() - starttime) + "</span>");
+                        RunTime.setText("<html>运行时长:<span style='color:green;'>" + formatDuring(System.currentTimeMillis() - startTime) + "</span>");
                     }
                 }, 1000);
             }
@@ -7551,7 +7533,7 @@ public class ZeroMS_UI extends javax.swing.JFrame {
         new Thread(new Runnable() {
             public void run() {
                 JOptionPane.showMessageDialog(null, "服务端启动需要时间,请点击确定继续。");
-                Start.启动游戏(null);
+                Start.run();
                 JOptionPane.showMessageDialog(null, "服务端启动完成。");
                 jButton1.setText("服务端运行中");
             }
@@ -10238,39 +10220,29 @@ public class ZeroMS_UI extends javax.swing.JFrame {
             }
 
         });
-    }
-        
+        }
+
+    private static long startTime = 0;
 
     /**
      * @param args the command line arguments
      */
-
-  
-    private static long starttime = 0;
-    public static void main(String args[]) throws InterruptedException {
-
-        starttime = System.currentTimeMillis();
-            EventQueue.invokeLater(new Runnable() {
-            public void run() {
-
+    public static void main(String[] args) throws InterruptedException {
+        startTime = System.currentTimeMillis();
+        EventQueue.invokeLater(() -> {
             ZeroMS_UI.getInstance().setVisible(true);
-
-        System.out.println("【" + CurrentReadable_Time() + "】【初始化完成,感谢使用ZeroMS服务端】");
-            }
+            System.out.println("【" + CurrentReadable_Time() + "】【初始化完成,感谢使用095服务端】");
         });
     }
+
     @Override
     public void setVisible(final boolean bln) {
         final Dimension size = Toolkit.getDefaultToolkit().getScreenSize();
-        this.setLocation((int)(size.getWidth() - this.getWidth()) / 2, (int)(size.getHeight() - this.getHeight()) / 2);
+        this.setLocation((int) (size.getWidth() - this.getWidth()) / 2, (int) (size.getHeight() - this.getHeight()) / 2);
         super.setVisible(bln);
         System.setOut(out);
         System.setErr(err);
     }
-
-  
-
-
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JCheckBox AUTO_REGISTER;

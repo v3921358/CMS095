@@ -1,11 +1,11 @@
 package server;
 
-import client.LoginCrypto;
 import client.MapleCharacter;
 import client.SkillFactory;
 import client.inventory.MapleInventoryIdentifier;
 import constants.ServerConstants;
 import database.DBConPool;
+import gui.ZeroMS_UI;
 import handling.MapleServerHandler;
 import handling.cashshop.CashShopServer;
 import handling.channel.ChannelServer;
@@ -15,26 +15,13 @@ import handling.login.LoginServer;
 import handling.world.World;
 import handling.world.family.MapleFamily;
 import handling.world.guild.MapleGuild;
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileWriter;
-import java.io.InputStreamReader;
-import java.net.InetAddress;
-import java.net.UnknownHostException;
+
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
-import java.sql.ResultSetMetaData;
 import java.sql.SQLException;
-import java.sql.Timestamp;
-import java.text.SimpleDateFormat;
 import java.util.Calendar;
-import java.util.Date;
-import java.util.HashMap;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Map;
-import java.util.TimeZone;
+
 import server.Timer.BuffTimer;
 import server.Timer.CheatTimer;
 import server.Timer.CloneTimer;
@@ -53,18 +40,18 @@ import server.maps.MapleMapFactory;
 import server.quest.MapleQuest;
 import tools.FileoutputUtil;
 import static tools.FileoutputUtil.CurrentReadable_Time;
-import tools.MacAddressTool;
+
 import tools.packet.MaplePacketCreator;
 
 public class Start {
 
-    public static long startTime = System.currentTimeMillis();
-    public static final Start instance = new Start();
-    public static boolean Check = true;
+    public static void main(final String[] args) throws InterruptedException {
+        ZeroMS_UI.main(args);
+    }
 
-   // public void run() throws InterruptedException {
-        public final static void 启动游戏(final String args[]) {
-        Check = false;
+    public static long startTime = System.currentTimeMillis();
+
+    public static void run() {
         try (Connection con = DBConPool.getInstance().getDataSource().getConnection()) {
             final PreparedStatement ps = con.prepareStatement("UPDATE accounts SET loggedin = 0");
             ps.executeUpdate();
@@ -189,105 +176,6 @@ public class Start {
             ShutdownServer.getInstance().run();
             ShutdownServer.getInstance().run();
         }
-    }
-
-    public static void main(final String args[]) throws InterruptedException {//机器码绑定
-        String[] macs = {"ee6d5b1c69cc6ab8e4c139fef2efde01af718f00",//自己
-            "0002cb2ccd37baeae2cf894526e94aa0e6ae651c",//阿木岛
-            "bbca38d637358416a9cc94f0f598cb33cddbdcbf",//牛肉干老哥
-            "65e8511feae8bbd0e196c9930800564a09e77893",//自用服务器2
-            "ba730d02841b8eca613ed5a858512aa2169473a4",//自己电脑
-            "9bfe73863086b92012e1fb02f872786002f464df",//自己电脑
-             "b6c35388e20ef1c84b8b19d818b80d20ace88e9a",//b仔电脑
-             "ab671f822abc9d1af88f26a342635a5bbb9d08f3",//飘飘
-             "499e0a3f95327da308ed005bc6c83995d9db7995",//095单机
-             "03e0ac56cb77d40007f3824985191bc41cfa67d3",//095单机
-             "1380a42b0297ff288307cc34a74646caa71384ef",//095单机
-             "bae19ae151a2e1a165771d4e82ac2beea0e33288",//新客户
-             "e25e2645d176e5fd99ab85c94f52a978a37c1d58",//新客户1.10
-             "cf324d58ee4a6e27d59bd9abccc3bf98e3fb355c",//新客户
-             "a225c9b2a7de37a3309419785600d728538c644c",//小明枫叶
-             "fb0eebc4a31a73ced434d5b5bbf00c98c599c146",
-            "d23f427545c17e57fab81be8ec58171e767ff85a"//浩浩
-        };
-
-        String mac = MacAddressTool.getMacAddress(false);
-        String num = returnSerialNumber();
-        String localMac = LoginCrypto.hexSha1(num + mac);
-        System.out.println("本机编号:" + " macs = " + localMac);
-        if (localMac != null) {
-            for (int i = 0; i < macs.length; i++) {
-                if (macs[i].equals(localMac)) {
-                    //instance.start();
-                    break;
-                }
-            }
-        } else {
-            System.exit(0);
-        }
-    }
-
-    public static String returnSerialNumber() {
-        String cpu = getCPUSerial();
-        String disk = getHardDiskSerialNumber("C");
-
-        int newdisk = Integer.parseInt(disk);
-
-        String s = cpu + newdisk;
-        String newStr = s.substring(8, s.length());
-        return newStr;
-    }
-
-    public static String getCPUSerial() {
-        String result = "";
-        try {
-            File file = File.createTempFile("tmp", ".vbs");
-            file.deleteOnExit();
-            FileWriter fw = new FileWriter(file);
-            String vbs = "Set objWMIService = GetObject(\"winmgmts:\\\\.\\root\\cimv2\")\nSet colItems = objWMIService.ExecQuery _ \n   (\"Select * from Win32_Processor\") \nFor Each objItem in colItems \n    Wscript.Echo objItem.ProcessorId \n    exit for  ' do the first cpu only! \nNext \n";
-
-            fw.write(vbs);
-            fw.close();
-            Process p = Runtime.getRuntime().exec("cscript //NoLogo " + file.getPath());
-
-            BufferedReader input = new BufferedReader(new InputStreamReader(p.getInputStream()));
-
-            String line;
-            while ((line = input.readLine()) != null) {
-                result = result + line;
-            }
-            input.close();
-            file.delete();
-        } catch (Exception e) {
-            e.fillInStackTrace();
-        }
-        if ((result.trim().length() < 1) || (result == null)) {
-            result = "无机器码被读取";
-        }
-        return result.trim();
-    }
-
-    public static String getHardDiskSerialNumber(String drive) {
-        String result = "";
-        try {
-            File file = File.createTempFile("realhowto", ".vbs");
-            file.deleteOnExit();
-            FileWriter fw = new FileWriter(file);
-            String vbs = "Set objFSO = CreateObject(\"Scripting.FileSystemObject\")\nSet colDrives = objFSO.Drives\nSet objDrive = colDrives.item(\"" + drive + "\")\n" + "Wscript.Echo objDrive.SerialNumber";
-
-            fw.write(vbs);
-            fw.close();
-            Process p = Runtime.getRuntime().exec("cscript //NoLogo " + file.getPath());
-
-            BufferedReader input = new BufferedReader(new InputStreamReader(p.getInputStream()));
-            String line;
-            while ((line = input.readLine()) != null) {
-                result = result + line;
-            }
-            input.close();
-        } catch (Exception e) {
-        }
-        return result.trim();
     }
 
     public static void 公告(final int time) {
